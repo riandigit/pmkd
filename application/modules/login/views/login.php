@@ -62,7 +62,7 @@
                         <i class="fa fa-lock"></i>
                         <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" /> </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <div class="row">
                     <div class="col-md-6">
                     <label class="control-label visible-ie8 visible-ie9">Captcha</label>
@@ -76,7 +76,7 @@
                       <img src="<?php echo base_url(); ?>login/capcay" id="ratcha_image" alt="CAPTCHA" width='100%' height='35px'>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <div class="form-actions">
                     <button class="btn btn-primary pull-right" type="submit" id="btn-login" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking">Sign In</button>

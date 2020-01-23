@@ -52,13 +52,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Electronic Toll Collection">
-	<meta name="author" content="Nutech Integrasi">
+	<meta name="description" content="PMKD">
+	<meta name="author" content="JOSEP">
 	<link rel="shortcut icon" type="image/png" href="<?= base_url('assets/img/fav.png'); ?>">
 
 	<title><?php if (isset($title) && $title != '') {
 				echo $title . ' - ';
-			} ?> Electronic Toll Collection</title>
+			} ?> PMKD</title>
 
 	<!-- <link href="<?php echo base_url(); ?>assets/pages/css/googletapis.css" rel='stylesheet' type='text/css'> -->
 
@@ -157,7 +157,7 @@
 			<div class="page-header-inner ">
 				<div class="page-logo">
 					<a href="<?php echo site_url(); ?>" style="line-height: 46px">
-						<img src="<?php echo base_url(); ?>assets/img/etc_small.png" alt="logo" class="logo-default" width="120" />
+						<img src="<?php echo base_url(); ?>assets/img/logo.png" alt="logo" class="logo-default" width="120" />
 					</a>
 					<div class="menu-toggler sidebar-toggler dropdown-menu-default">
 						<span></span>

@@ -18,9 +18,9 @@ class Login extends CI_Controller{
 		$this->load->view('login');
 	}
 
-    public function capcay(){
-        $this->load->view('ratcha_image');
-    }
+    // public function capcay(){
+    //     $this->load->view('ratcha_image');
+    // }
 
     public function do_login()
     {
@@ -34,16 +34,16 @@ class Login extends CI_Controller{
             "username" => $username
         );
 
-        // pengecekan chapcha
-        if ($this->session->userdata('ratcha') <> $ratcha) {
-            $message['error'] = 'Captcha tidak cocok.';
-            echo json_encode($message);
-            $res = array(
-                "code" => "0",
-                "message" => $message['error']
-            );
-            exit;
-        }
+        // // pengecekan chapcha
+        // if ($this->session->userdata('ratcha') <> $ratcha) {
+        //     $message['error'] = 'Captcha tidak cocok.';
+        //     echo json_encode($message);
+        //     $res = array(
+        //         "code" => "0",
+        //         "message" => $message['error']
+        //     );
+        //     exit;
+        // }
 
         // pengecekan user
         if($user){
