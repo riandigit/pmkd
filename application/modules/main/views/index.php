@@ -36,6 +36,48 @@
             }
 
         }
+
+        .footer {
+            background: #152f4f;
+            color: white;
+        }
+
+        .footer .links ul {
+            list-style-type: none;
+        }
+
+        .footer .links li a {
+            color: white;
+            -webkit-transition: color 0.2s;
+            transition: color 0.2s;
+        }
+
+        .footer .links li a:hover {
+            text-decoration: none;
+            color: #4180cb;
+        }
+
+        .footer .about-company i {
+            font-size: 25px;
+        }
+
+        .footer .about-company a {
+            color: white;
+            -webkit-transition: color 0.2s;
+            transition: color 0.2s;
+        }
+
+        .footer .about-company a:hover {
+            color: #4180cb;
+        }
+
+        .footer .location i {
+            font-size: 18px;
+        }
+
+        .footer .copyright p {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
 
 <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
@@ -55,17 +97,52 @@
                 <div class="top-menu">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
-                            <a href="<?=base_url('login');?>"  >LOGIN</span>
+                            <a href="<?= base_url('login'); ?>">LOGIN</span>
                                 <!-- <i class="fa fa-angle-down"></i> -->
                             </a>
                         </li>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </div>
         <div class="clearfix"></div>
+
         <div class="page-container">
             <!-- <div class='row'> -->
+            <div class="col-md-12" style=" margin-top:20px;">
+                <div class="col-md-4" style="background-color: grey;">
+
+                    <div class="potret body" style="background-color: #3B5998;">
+                        <div class="form-group" style="margin-left: 10px;margin-top:10px;">
+                            <label>Nama Lengkap</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                        </div>
+                        <div class="form-group"style="margin-left: 10px;margin-top:10px;">
+                            <label>Nama Lengkap</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                        </div>
+                        <div class="form-group"style="margin-left: 10px;margin-top:10px;">
+                            <label>Nama Lengkap</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                        </div>
+                        <div class="form-group"style="margin-left: 10px;margin-top:10px;">
+                            <label>Nama Lengkap</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                        </div>
+                        <div class="form-group" style="margin-left: 10px;margin-top:10px;">
+                            <label>Nama Lengkap</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
             <div class="col-md-12">
                 <div class="content center" style=" margin-top:20px;">
                     <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px; border-radius:25px !important; height:320px;">
@@ -93,7 +170,37 @@
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
+        </div>
+        <div class="mt-5 pt-5 pb-5 footer" style="margin-top: 5px;padding-top:5px;padding-bottom:5px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xs-12 about-company" style="margin-top:10px;">
+                        <img src="<?php echo base_url(); ?>assets/img/footer.jpg" width="120" height="180" alt="logo">
+                    </div>
+                    <div class="col-lg-3 col-xs-12 links">
+                        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                        <ul class="m-0 p-0">
+                            <li>- <a href="#">Lorem ipsum</a></li>
+                            <li>- <a href="#">Nam mauris velit</a></li>
+                            <li>- <a href="#">Etiam vitae mauris</a></li>
+                            <li>- <a href="#">Fusce scelerisque</a></li>
+                            <li>- <a href="#">Sed faucibus</a></li>
+                            <li>- <a href="#">Mauris efficitur nulla</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 location">
+                        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+                        <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                        <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col copyright">
+                        <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="<?php echo base_url() ?>assets/global/plugins/respond.min.js"></script>
