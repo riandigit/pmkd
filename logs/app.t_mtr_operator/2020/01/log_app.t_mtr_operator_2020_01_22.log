@@ -1,0 +1,7 @@
+
+
+2020-01-22 15:30:44.222761|ADD|LANE|adminmarga|{"operator_code":"OPR10003","operator_name":"S","logo":"S1579681843.jpg","operator_status":1,"created_by":"adminmarga"}
+
+2020-01-22 15:31:05.795282|EDIT|OPERATOR|adminmarga|{"operator_code":"OPR10003","operator_name":"SA","logo":"S1579681843.jpg","updated_by":"adminmarga","updated_on":"2020-01-22 15:31:05"}|{"operator_id":"12","operator_code":"OPR10003","operator_name":"S","operator_status":"1","created_by":"adminmarga","created_date":"2020-01-22 00:30:44.123437-08","logo":"S1579681843.jpg","operator_desc":null,"updated_by":null,"updated_on":null,"created_operator_by":null}
+
+2020-01-22 15:31:44.498686|DELETE|LANE|adminmarga|{"operator_status":-5,"updated_by":"adminmarga","updated_on":"2020-01-22 15:31:44"}

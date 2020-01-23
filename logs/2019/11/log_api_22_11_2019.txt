@@ -1,0 +1,118 @@
+191122090908|ad|http://localhost/etc_admin/login|login|{"username":"ad"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122090913|ad|http://localhost/etc_admin/login|login|{"username":"ad"}|{"code":"0","message":"Anda tidak punya akses. "}|::1
+
+191122090959|ad|http://localhost/etc_admin/login|login|{"username":"ad"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122091004|ad|http://localhost/etc_admin/login|login|{"username":"ad"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122091153|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122091240|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122091348|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122091432|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122091954|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122092006|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122092055|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122092248|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122092541|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122092855|aasd|http://localhost/etc_admin/login|login|{"username":"aasd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122092917|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122093220|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122093240|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122093252|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122093337|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122093417|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122093437|asd|http://localhost/etc_admin/login|login|{"username":"asd"}|{"code":"0","message":"Captcha tidak cocok."}|::1
+
+191122093811|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122093824|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122093832|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122093953|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122093958|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122094310|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122094319|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122094331|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"0","message":"Username Atau Password Tidak Cocok. "}|::1
+
+191122094515|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"1","message":"Login success. "}|::1
+
+191122095121|admin|http://localhost/etc_admin/logout|logout||{"code":"1","message":"Berhasil logout"}|::1
+
+191122155209|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"1","message":"Login success. "}|::1
+
+191122155830|admin|http://localhost/etc_admin/logout|logout||{"code":"1","message":"Berhasil logout"}|::1
+
+191122160005|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"1","message":"Login success. "}|::1
+
+191122160548|admin|http://localhost/etc_admin/logout|logout||{"code":"1","message":"Berhasil logout"}|::1
+
+191122162129|admin|http://localhost/etc_admin/login|login|{"username":"admin"}|{"code":"1","message":"Login success. "}|::1
+
+191122163628|admin|configuration/menu/action_add|ADD|{"name":"Configuration","icon":"gear","order":"3","slug":"#","parent_id":0}|{"code":1,"message":"Simpan Data Berhasil"}|::1
+
+191122163744|admin|configuration/menu/action_edit|EDIT|{"id":"1","name":"Dashboard","icon":"dashboard","order":"1","slug":"dashboard","parent_id":"0"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122164345|admin|configuration/menu/action_edit|EDIT|{"id":"3","name":"Menu","icon":"gear","order":"1","slug":"configuration\/menu","parent_id":"2"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122164443|admin|configuration/menu/action_add|ADD|{"name":"Privilege","icon":"circle","order":"2","slug":"configuration\/privilege","parent_id":"2"}|{"code":1,"message":"Simpan Data Berhasil"}|::1
+
+191122165626|admin|configuration/menu/action_add|ADD|{"name":"Configuration","icon":"gear","order":"1","slug":"#","parent_id":0}|{"code":0,"message":"Order 1 Sudah digunakan"}|::1
+
+191122165634|admin|configuration/menu/action_add|ADD|{"name":"Configuration","icon":"gear","order":"9","slug":"#","parent_id":0}|{"code":1,"message":"Simpan Data Berhasil"}|::1
+
+191122165714|admin|configuration/menu/action_edit|EDIT|{"id":"3","name":"Menu","icon":"circle","order":"1","slug":"configuration\/menu","parent_id":"5"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122165729|admin|configuration/menu/action_edit|EDIT|{"id":"4","name":"Privilege","icon":"circle","order":"2","slug":"configuration\/priivilege","parent_id":"5"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122165955|admin|configuration/menu/action_edit|EDIT|{"id":"5","name":"Configuration","icon":"gear","order":"1","slug":"configuration","parent_id":"0"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170011|admin|configuration/menu/action_edit|EDIT|{"id":"3","name":"Menu","icon":"circle","order":"1","slug":"configuration\/menu","parent_id":"0"}|{"code":0,"message":"Order 1 Sudah digunakan"}|::1
+
+191122170015|admin|configuration/menu/action_edit|EDIT|{"id":"3","name":"Menu","icon":"circle","order":"3","slug":"configuration\/menu","parent_id":"0"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170022|admin|configuration/menu/action_edit|EDIT|{"id":"4","name":"Privilege","icon":"circle","order":"2","slug":"configuration\/priivilege","parent_id":"0"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170227|admin|configuration/privilege/action_privilege|set_privilege|{"group_id":"1","actions":[{"menu_id":"5","detail_id":"8","privilege_id":"0","status":""},{"menu_id":"4","detail_id":"5","privilege_id":"5","status":"1"},{"menu_id":"4","detail_id":"6","privilege_id":"6","status":"1"},{"menu_id":"4","detail_id":"7","privilege_id":"7","status":"1"},{"menu_id":"3","detail_id":"2","privilege_id":"2","status":"1"},{"menu_id":"3","detail_id":"3","privilege_id":"3","status":"1"},{"menu_id":"3","detail_id":"4","privilege_id":"4","status":"1"},{"menu_id":"3","detail_id":"9","privilege_id":"0","status":""}]}|{"code":1,"message":"Set Privilege Berhasil"}|::1
+
+191122170301|admin|configuration/menu/action_edit|EDIT|{"id":"3","name":"Menu","icon":"circle","order":"1","slug":"configuration\/menu","parent_id":"5"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170315|admin|configuration/menu/action_edit|EDIT|{"id":"4","name":"Privilege","icon":"circle","order":"2","slug":"configuration\/privilege","parent_id":"5"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170405|admin|configuration/menu/action_add|ADD|{"name":"User","icon":"circle","order":"3","slug":"configuration\/user","parent_id":"5"}|{"code":1,"message":"Simpan Data Berhasil"}|::1
+
+191122170518|admin|configuration/menu/action_add|ADD|{"name":"Group","icon":"circle","order":"4","slug":"configuration\/group","parent_id":"5"}|{"code":1,"message":"Simpan Data Berhasil"}|::1
+
+191122170538|admin|configuration/privilege/action_privilege|set_privilege|{"group_id":"1","actions":[{"menu_id":"5","detail_id":"8","privilege_id":"8","status":"1"},{"menu_id":"3","detail_id":"2","privilege_id":"2","status":"1"},{"menu_id":"3","detail_id":"3","privilege_id":"3","status":"1"},{"menu_id":"3","detail_id":"4","privilege_id":"4","status":"1"},{"menu_id":"3","detail_id":"9","privilege_id":"9","status":"1"},{"menu_id":"4","detail_id":"5","privilege_id":"5","status":"1"},{"menu_id":"4","detail_id":"6","privilege_id":"6","status":"1"},{"menu_id":"4","detail_id":"7","privilege_id":"7","status":"1"},{"menu_id":"6","detail_id":"10","privilege_id":"0","status":""},{"menu_id":"6","detail_id":"13","privilege_id":"0","status":""},{"menu_id":"6","detail_id":"11","privilege_id":"0","status":""},{"menu_id":"6","detail_id":"12","privilege_id":"0","status":""},{"menu_id":"7","detail_id":"14","privilege_id":"0","status":""},{"menu_id":"7","detail_id":"17","privilege_id":"0","status":""},{"menu_id":"7","detail_id":"15","privilege_id":"0","status":""},{"menu_id":"7","detail_id":"16","privilege_id":"0","status":""}]}|{"code":1,"message":"Set Privilege Berhasil"}|::1
+
+191122170629|admin|configuration/menu/action_edit|EDIT|{"id":"6","name":"User","icon":"circle","order":"3","slug":"configuration\/users","parent_id":"5"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170717|admin|configuration/menu/action_edit|EDIT|{"id":"5","name":"Configuration","icon":"gear","order":"1","slug":"#","parent_id":"0"}|{"code":1,"message":"Update Data Berhasil"}|::1
+
+191122170741|admin|configuration/menu/action_add|ADD|{"name":"Dashboard","icon":"dashboard","order":"0","slug":"dashboard","parent_id":0}|{"code":1,"message":"Simpan Data Berhasil"}|::1
+
+191122170757|admin|configuration/privilege/action_privilege|set_privilege|{"group_id":"1","actions":[{"menu_id":"8","detail_id":"18","privilege_id":"0","status":""},{"menu_id":"5","detail_id":"8","privilege_id":"8","status":"1"},{"menu_id":"3","detail_id":"2","privilege_id":"2","status":"1"},{"menu_id":"3","detail_id":"3","privilege_id":"3","status":"1"},{"menu_id":"3","detail_id":"4","privilege_id":"4","status":"1"},{"menu_id":"3","detail_id":"9","privilege_id":"9","status":"1"},{"menu_id":"4","detail_id":"5","privilege_id":"5","status":"1"},{"menu_id":"4","detail_id":"6","privilege_id":"6","status":"1"},{"menu_id":"4","detail_id":"7","privilege_id":"7","status":"1"},{"menu_id":"6","detail_id":"10","privilege_id":"10","status":"1"},{"menu_id":"6","detail_id":"13","privilege_id":"11","status":"1"},{"menu_id":"6","detail_id":"11","privilege_id":"12","status":"1"},{"menu_id":"6","detail_id":"12","privilege_id":"13","status":"1"},{"menu_id":"7","detail_id":"14","privilege_id":"14","status":"1"},{"menu_id":"7","detail_id":"17","privilege_id":"15","status":"1"},{"menu_id":"7","detail_id":"15","privilege_id":"16","status":"1"},{"menu_id":"7","detail_id":"16","privilege_id":"17","status":"1"}]}|{"code":1,"message":"Set Privilege Berhasil"}|::1
+
+191122171547|admin|http://localhost/etc_cms/login|login|{"username":"admin"}|{"code":"1","message":"Login success. "}|::1
+

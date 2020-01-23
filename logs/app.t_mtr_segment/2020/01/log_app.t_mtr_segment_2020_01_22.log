@@ -1,0 +1,177 @@
+
+
+2020-01-22 16:29:33.314719|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"3ddc97d78caeb083a96454d5f2b996df714c18af7478aeece9f6f090f3a3842f179532b1021337040f62b9e3dfb30ad672cdc91ed4c8524d601eb811b159650cckluTss11jEto6Eps13qx3pPx7ZhFi","name":"BANTEN"}
+
+2020-01-22 16:29:34.605630|GET CITY|SEGMENT|adminmarga|{"id_seq":"0afc581f600f8e14d29838f78b42fa08cdb7295225a1f6b5aee5cb19981cb809f3a1ae8d11d33745994de90cad5fb924c3845a618cc9f77c2c488f037cbbd338Hps13ERmlLCft7JfoMW2KtXosBe","name":"jakarta utara"}
+
+2020-01-22 16:29:36.66963|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:31:14.525780|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"b59f29ef83da17e7c020323c6f83e8544980c0c1b3ae2d1e8832c5b09250686be06a955e6ca4d24883d6c40e740cee3db5b90f64e02896375f8d0adea021942aejqUps13SRa1PMwQyCOndPjabOc","name":"BANTEN"}
+
+2020-01-22 16:31:16.225878|GET CITY|SEGMENT|adminmarga|{"id_seq":"6aa678df41b843f8f0a7a95b0bf2718e1afd4dcd5e9cf67d78df0e60f8a5d9549f4788bcda074b0ed91071a0493137791d33b0fc4d8793f233ba39c73fb81c9aNJoUt8agvX3jb7nlxaMkmD6c","name":"jakarta utara"}
+
+2020-01-22 16:31:17.900969|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:33:49.452399|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"12137f8a12ef977526c2c68d714e3a4d56373438942db33b6936a7f07aef7ac3e9e219f026c376af0081c6e5933e54a2e30134715b7fc6b8abff6060ec800429NRqsi2ZXwfps1324EoG1cNDcRmr","name":"BANTEN"}
+
+2020-01-22 16:33:50.968030|GET CITY|SEGMENT|adminmarga|{"id_seq":"85e497763f17e2ea1f05224dc4579ef5b7a38c68a87a844d4d6ceab88e13dd6ac3ea5b49092114b4dee24252b5557b4c7b6b13c158be7e7bac07b10080b02941ufsYpss11Zjm5e2qKWAnadF1lkG","name":"jakarta utara"}
+
+2020-01-22 16:33:52.535348|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:35:44.721455|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"ad9f7951c258b5e437fecd32d70c0d9140ba3019bb1d90e6275129c531546daf7b19568f4325cd61538bf9ce4b21b006be2513f66880d2f2046006065e735c4dmQpUjss11uSfwBfxn6dbKOpuSZp","name":"BANTEN"}
+
+2020-01-22 16:35:46.462308|GET CITY|SEGMENT|adminmarga|{"id_seq":"8e29bad787cf8105a775d0d7461840528aa4c4111ca16f4cae01ad7696479ce903e91e5748e5d1ef7c50ff48d6ad8d3884eb25d0efc2461acbad187b7bced276jUpEQkrWrJ9wfPl7m3t6oHUF","name":"jakarta utara"}
+
+2020-01-22 16:35:47.992231|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:37:31.272733|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"4bd1438c1731ecb6e7b23433b4b953cf16bcab081090e04c41749530f66292d6d8954fb298ca7111ab91067dc8f949d90096d984558da06f3a7c9061ad3e3d41puMlR8b59ceLhI3s3ubD7P2o","name":"BANTEN"}
+
+2020-01-22 16:37:33.883167|GET CITY|SEGMENT|adminmarga|{"id_seq":"1d480b577301e4182650b3f7f265ddae7682d3bc04fac51e890f2bc93321cd0bf86746439d78be7fa30cdbacd592d34472872813396676554c336b295fe3a5fdCJwisYZNgSM2isVDdcRzVXjF","name":"jakarta utara"}
+
+2020-01-22 16:37:36.220153|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:40:05.208337|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"4cac9b162e2e1359e3cb04b75a23da5d98217866b95e3be0a570229c44ad35928218bdf87b79819da342dee707a80414e1870b5e53f7502f725570393948069d37l6NZYt9T60oul1vps13pkQpiI","name":"BANTEN"}
+
+2020-01-22 16:40:07.23402|GET CITY|SEGMENT|adminmarga|{"id_seq":"67a6d6f347e89485d6ad7cbaf2fd2cd9353698297d6c12399ced7698615bda322707a84f9e9ec4f4f14e207b733f834b88e456c8b08eadbafa89211cd9363eabvMFB4Y8HG1OHvkEWydyxNAxZ","name":"jakarta utara"}
+
+2020-01-22 16:40:08.633367|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:47:01.339775|EDIT SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10004","segment_name":"4S","operator_id":"10","length":"12","updated_by":"adminmarga","updated_on":"2020-01-22 16:47:01"}|{"id_seq":"148","segment_code":"SGM10004","segment_name":"4","operator_id":"10","status":"1","created_by":"adminmarga","created_on":"2020-01-13 15:16:13-08","updated_by":null,"updated_on":null,"length":"12"}
+
+2020-01-22 16:49:05.614488|DELETE|SEGMENT|adminmarga|{"status":-5,"updated_by":"adminmarga","updated_on":"2020-01-22 16:49:05","segment_code":"SGM10004"}
+
+2020-01-22 16:49:19.186872|ADD|SEGMENT|adminmarga|{"segment_code":"SGM10005","segment_name":"K","operator_id":"10","length":"2","status":1,"created_by":"adminmarga"}
+
+2020-01-22 16:49:22.420332|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"0c1acb8807091fd01f6861c0dd2ada44d65977124493214914441e12e672ed2a3a81bcde94f09f1261cf1a28bbdca01ba068edd6d5531ea819a94e48e7f85c58q5z3dUssxiZQRxKmR7EgF4ass11","name":"BANTEN"}
+
+2020-01-22 16:49:24.300796|GET CITY|SEGMENT|adminmarga|{"id_seq":"cddd993ba43bb91418240ca45062dbf9cc23ec853a2fbff14bb4c663b6d7b71df58622db17469d5dbf364f81a4ced376605accf3c605934c029ae15e241cc2c7RNUe3MXl9YEqwrBG2upAoLUU","name":"jakarta utara"}
+
+2020-01-22 16:49:26.639258|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 16:49:31.850099|ADD PAIRING|SEGMENT|adminmarga|{"segment_code":"SGM10005","plaza_code":"PLZ10003","status":1,"created_by":"adminmarga"}
+
+2020-01-22 16:51:08.129720|ADD|SEGMENT|adminmarga|{"segment_code":"SGM10006","segment_name":"AS","operator_id":"10","length":"21","status":1,"created_by":"adminmarga"}
+
+2020-01-22 16:51:11.147264|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"3a376e4005a2bd91457f20c60df160a993a4b985607ddae682ef4dad92335fea9bfebc6bd9fe174607417b03fa9d121f8b28b75cb280831fd49833b57c1e09909Q81ss11ss11bIuWr38uULZmydj0Ba","name":"BANTEN"}
+
+2020-01-22 16:51:12.914720|GET CITY|SEGMENT|adminmarga|{"id_seq":"90ed597d6fb99db74ae3b4af2dd11ac4f01a49be01af0a0fcc0e55d7b39793d5e837f1c6b0c03374482196327ecafd8fc0ab86dab39d6c1ca9d003e9a6327d7aIPmRNQHwHPT7zuSFeJGRF4uss11","name":"jakarta utara"}
+
+2020-01-22 16:51:14.929091|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 16:51:19.68205|ADD PAIRING|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 16:51:33.931989|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"5037e244c4cbc7b50efd9280e57a52bc7a7064c9ae49bc8b7cb9987555fe93d8642c92d2e700200a5015116d7bc0e4fed3b88058586b10d9d52cda7f2ef73f3f5f8Q62FzA2dymilE6uPgCKGL","name":"BANTEN"}
+
+2020-01-22 16:51:35.781218|GET CITY|SEGMENT|adminmarga|null
+
+2020-01-22 16:51:49.848493|GET CITY|SEGMENT|adminmarga|{"id_seq":"167a7a16458e7aeae93f556e0c57deacb8eb742c9a43d110a1b7bc55f8931447d04401f8aa64bedf10c5be48af2856edeb25342556986f883b55597b26bda775bSFix4aIVQ7jI4eItQzwaURB","name":"jakarta utara"}
+
+2020-01-22 16:51:52.322856|GET PLAZA|SEGMENT|adminmarga|null
+
+2020-01-22 16:52:03.449649|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 16:52:09.291454|GET PLAZA|SEGMENT|adminmarga|null
+
+2020-01-22 16:52:12.913401|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 16:52:20.860686|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":null,"updated_on":null}
+
+2020-01-22 16:52:20.864074|ADD PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 16:52:20.865998|ADD PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 16:53:30.702624|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:53:30.704582|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"209","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:52:20.861245-08","updated_by":null,"updated_on":null}
+
+2020-01-22 16:53:30.706735|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"210","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:52:20.86456-08","updated_by":null,"updated_on":null}
+
+2020-01-22 16:53:56.835585|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:53:56.838374|DELETE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"209","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:52:20.861245-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:53:56.840934|DELETE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"210","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:52:20.86456-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:54:03.479066|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:54:09.270241|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:54:59.267880|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:55:37.300843|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:57:32.905140|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:57:37.613731|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:57:43.68731|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:58:10.34476|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"208","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:19.063587-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 16:59:26.244598|DELETE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|null|{"id_seq":"150","segment_code":"SGM10006","segment_name":"AS","operator_id":"10","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:08.125533-08","updated_by":null,"updated_on":null,"length":"21"}
+
+2020-01-22 17:00:28.816940|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"227be25e1f22081910f55845442e6d302b47e6ae123b7bd3f54c2ee96ba8ffecdc20fe7414a5d3a7a8eec00be431c4307422f71d1eddc1851fecd8b17cc245c858X9gQmO877CpMTWHCpE63Jg","name":"BANTEN"}
+
+2020-01-22 17:00:30.639855|GET CITY|SEGMENT|adminmarga|{"id_seq":"56945f73f26d212c72424bb5a43dcafbcc204f297a034d6ede8c0e586a8e4f7a532273b70a952c22766a8cb04ca48a5b8600a7b08099fb137b04d3af6360ed67oCyss11HnMfvTrKlQqVoZXst1RH","name":"jakarta utara"}
+
+2020-01-22 17:00:32.619770|GET PLAZA|SEGMENT|adminmarga|null
+
+2020-01-22 17:00:36.412236|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 17:00:44.721758|ADD PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 17:00:44.723889|ADD PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 17:01:08.181882|DELETE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"status":-5,"updated_by":"adminmarga"}|{"id_seq":"150","segment_code":"SGM10006","segment_name":"AS","operator_id":"10","status":"1","created_by":"adminmarga","created_on":"2020-01-22 01:51:08.125533-08","updated_by":null,"updated_on":null,"length":"21"}
+
+2020-01-22 17:01:14.381285|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"56f5d54bf48715ef1bde9a541d7fdc8e4047f72ab68603b40ba8ca6e5f94d917b413e72564d024f8619fc909b4e9d051d616221d0ce48b5cc070db2eac920a34eNlwcHkGX1GfhjsFKvSJBrsc","name":"BANTEN"}
+
+2020-01-22 17:01:16.623550|GET CITY|SEGMENT|adminmarga|{"id_seq":"3b5a0df5c3b129c98ac7d118169987d7578176e4a3ba0282762770276802b9a02823bdb96d3ce83b21f7ebefcdbd19398cc71c430d9a6cfb642a93b876238915tyfr77fyKZA5w5rYWI2tW55V","name":"jakarta utara"}
+
+2020-01-22 17:01:19.635239|GET PLAZA|SEGMENT|adminmarga|null
+
+2020-01-22 17:01:23.357375|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 17:01:29.618957|ADD PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 17:01:29.630345|ADD PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"created_by":"adminmarga"}
+
+2020-01-22 17:09:36.981525|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":null,"updated_on":null}
+
+2020-01-22 17:09:36.983427|DELETE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"214","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.619426-08","updated_by":null,"updated_on":null}
+
+2020-01-22 17:13:14.358527|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"283929ed031811050a31bac80e9ba2b956a3a05d10f6dc9a9b9651ea39cdabc2962d91b2541e52c4f27ca4c6c64fc77611765f6e3fe83c7d2717f875346f0cbeqg0GMUTMrpFg8MHqsbkK5OF6","name":"BANTEN"}
+
+2020-01-22 17:13:16.223218|GET CITY|SEGMENT|adminmarga|{"id_seq":"954ee0bacb91ed265520aac9fd16093042cb295f0d1a7432c999bae2c7d60ddd297fa377d4fff7a9c77a18d004330b635ced0d6048988cb441ee3318f88169c7o2a0Lps13F5CEuuoj2xDqdWCKAO","name":"jakarta utara"}
+
+2020-01-22 17:13:18.243062|GET PLAZA|SEGMENT|adminmarga|null
+
+2020-01-22 17:13:21.762559|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 17:14:36.321690|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"0a5875837c0badcc26ec48d72350ac296ee9a222678d9a06061c632109d46ea8a9e1a0fb97bf100f642a99920ef377877de1c89c8ffd6a2a182157e6015029b8yTSvj3osD7I8WgvuLELBxycK","name":"BANTEN"}
+
+2020-01-22 17:14:38.389255|GET CITY|SEGMENT|adminmarga|{"id_seq":"af09809a06c35c331145cd092df2a4be7c897ff95f9bab0f063a1f6b9cb5e0b433c179c68939563ecfae1566b0cc271238781562e6a019414a92914edfd09bd820dFps13xOps13QnDS6lwOjuKX37jF","name":"jakarta utara"}
+
+2020-01-22 17:14:41.365808|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}
+
+2020-01-22 17:22:58.795612|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 17:23:13.627953|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 17:24:10.559727|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 17:24:29.923939|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 17:25:21.852010|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 17:28:35.587067|GET PROVINCE|SEGMENT|adminmarga|{"id_seq":"1d8ca39018d83202290c33c03819b93b227fa076d6829c92219d3dbdd1de4e712206523040df3d5e54d5df64db35569b35aee400c405d90d65c8f6b6efd7a7f5N0CLJdtHrVSdGrA7zOBqjq3Y","name":"BANTEN"}
+
+2020-01-22 17:28:37.375211|GET CITY|SEGMENT|adminmarga|{"id_seq":"85b3c22597208d8ec6268ad604582fe714c9aed674da46f06d4f79a643b01803858a1edce2c88eee2be2ccb285c9585321f77d9347ea135dfc44d4714327641fMftxX5h6JFCMJCFKps13dVGKH06","name":"jakarta utara"}
+
+2020-01-22 17:28:39.567656|GET PLAZA|SEGMENT|adminmarga|null
+
+2020-01-22 17:28:46.873710|GET PLAZA|SEGMENT|adminmarga|{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}
+
+2020-01-22 17:29:02.686209|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}
+
+2020-01-22 17:32:38.423849|UPDATE PAIRING PLAZA SEGMENT|SEGMENT|adminmarga|{"segment_code":"SGM10006","plaza_code":"PLZ10004","status":1,"updated_by":"adminmarga"}|{"id_seq":"213","segment_code":"SGM10006","plaza_code":"PLZ10004","status":"1","created_by":"adminmarga","created_on":"2020-01-22 02:01:29.616126-08","updated_by":"adminmarga","updated_on":null}

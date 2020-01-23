@@ -1,0 +1,96 @@
+200122093422|adminmarga|http://localhost/etc_cms/login|login|{"username":"adminmarga"}|{"code":"1","message":"Login success. "}|::1
+
+200122094630|adminmarga|fare_management/fare/saveChange|Change Fare For Route|DATA BARU|{"route_code":"RTC100004","golongan1":"1204","golongan2":"1204","golongan3":"1204","golongan4":"1204","golongan5":"1204","golongan6":"1204","file_name":"okelah coba","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|DATA LAMA|{"file_name":"a","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_start_time":"2020-01-22 00:00:00","route_code":"RTC100004","route_name":"1 KE 2","route_length":null,"island":"4","province":"18","city":"35"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122100454|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sk menteri","route_code":null,"golongan1":"1000","golongan2":"1300","golongan3":"1400","golongan4":"1500","golongan5":"1600","golongan6":"1700","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122100454|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sk menteri","route_code":null,"golongan1":"1500","golongan2":"1540","golongan3":"1230","golongan4":"1200","golongan5":"1400","golongan6":"1300","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122101404|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sk menteri","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122101404|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sk menteri","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122101427|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|null|error nama tidak ditemukan di master rute, pastikan rute yang dimasukan sudah sama dengan yang ada di menu route|::1
+
+200122101427|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|null|error nama tidak ditemukan di master rute, pastikan rute yang dimasukan sudah sama dengan yang ada di menu route|::1
+
+200122101525|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|null||::1
+
+200122101525|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|null||::1
+
+200122101859|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:18:59"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122101926|adminmarga|fare_management/fare/saveChange|Change Fare For Route|{"route_code":"RTC100004","golongan1":"2500","golongan2":"2400","golongan3":"2400","golongan4":"2400","golongan5":"2400","golongan6":"2400","file_name":"okela ini dicoba","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122101946|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:19:46"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122102250|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"okelaa ini","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122102250|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"okelaa ini","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122102300|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:23:00"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122102338|adminmarga|fare_management/fare/saveChange|Change Fare For Route|{"route_code":"RTC100004","golongan1":"3800","golongan2":"3200","golongan3":"3100","golongan4":"2400","golongan5":"2500","golongan6":"2800","file_name":"okelah ini okee","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122102355|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:23:55"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122103211|adminmarga|fare_management/fare/saveChange|Change Fare For Route|{"route_code":"RTC100004","golongan1":"210","golongan2":"210","golongan3":"210","golongan4":"210","golongan5":"211","golongan6":"2111","file_name":"okelahhhh coba change","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122103548|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:35:48"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122103630|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"inilah kok","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122103630|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"inilah kok","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122103643|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:36:42"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122103718|adminmarga|fare_management/fare/saveChange|Change Fare For Route|{"route_code":"RTC100004","golongan1":"3200","golongan2":"3200","golongan3":"3200","golongan4":"3200","golongan5":"3200","golongan6":"3200","file_name":"okela ini kita coba lai","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122103731|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:37:31"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122103801|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"-5","remark":"ini gk sesuai","approve_by":"adminmarga","approve_on":"2020-01-22 10:38:01"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122104649|adminmarga|fare_management/fare/saveChange|Change Fare For Route|{"route_code":"RTC100004","golongan1":"3240","golongan2":"3210","golongan3":"3220","golongan4":"3300","golongan5":"3400","golongan6":"3500","file_name":"okelahhhhh","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122104813|adminmarga|fare_management/fare/deleteFare/5b0c62921f4bbcaac2d35ca459eebb4921edaa2ed37765557fb09874c493e4cac6157ad1dd36671c86d475419888e3b69fcb0dad4943a45bd868ffd1bb4168abr6TfbeqmyEgB86ps1302LI6sc38|Delete Fare type & Fare|{"fare_status":-5,"updated_by":"adminmarga","updated_on":"2020-01-22 10:48:13"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122104843|adminmarga|fare_management/fare/saveChange|Change Fare For Route|{"route_code":"RTC100004","golongan1":"3400","golongan2":"3400","golongan3":"4300","golongan4":"3400","golongan5":"3400","golongan6":"3200","file_name":"oke","fare_status":2,"fare_start_time":"2020-01-23 00:00","created_by":"adminmarga","fare_operator":"10"}|{"code":1,"message":"Data Fare Successfull Saved"}|::1
+
+200122105404|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"oke","approve_by":"adminmarga","approve_on":"2020-01-22 10:54:04"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122105544|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"okela","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122105544|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"okela","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-23 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200122105554|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"1","remark":"","approve_by":"adminmarga","approve_on":"2020-01-22 10:55:54"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122105613|adminmarga|fare_management/fare/saveApprove|set End Time|{"fare_status":"-5","remark":"okelahhh kita coba remark","approve_by":"adminmarga","approve_on":"2020-01-22 10:56:13"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122115106|adminmarga|operator_management/segment/getProvince/433e2e891d83d9517dce74b0c064665e0348d4c93fbbc3f3c2d7b627f4927fab08883bd35d92b94ef0161c0eccf03f6e7828207ea75875e45c1665a667667f23bNbI9yR9K14MtcS8niYNmV4eq14|getProvince|[{"id_seq":"297ff28d73b2de8a01d5bdd4384811d25c1ad8d33345aef00b40f6170a0950fd6351cb7d9430b576dd6ea34ee629f7252d0c43b270dbabdab6611d2a7528d061iVaaTGAn8n0QWUjps13KzbhqwCJ","name":"DKI JAKARTA"},{"id_seq":"d83d4d820848b73eb389888bd16164abf850d942bcd197729833e85f90ae0a74510f2c2b88394d2fa3ed188e52fa9c1c623aa8a72b31fdbc3686bcaf72499f5ei4VufiIJ39v33OTc8c0bhFps13Q","name":"BANTEN"}]|success get province|::1
+
+200122115108|adminmarga|operator_management/segment/getCity/297ff28d73b2de8a01d5bdd4384811d25c1ad8d33345aef00b40f6170a0950fd6351cb7d9430b576dd6ea34ee629f7252d0c43b270dbabdab6611d2a7528d061iVaaTGAn8n0QWUjps13KzbhqwCJ|getCity|[{"id_seq":"6acbca1242cbb96608b424a2f2592490ca51705cf38dbedf471c49ee987f3b37f2c28ac147eeca2862620bd0b89088666f783f5290b30395623cb69b0b2d5be79e4NBX9vWjnlbeNoM9Pmps132Mb","name":"jakarta barat"},{"id_seq":"131e63364df3cf3c5581794cd0bb81ff4828c16c67bac4aab2a8639aed4d3b75ccc765d290898d3610fb4e4d9ec31ae208f11a267323ce90441df02072c70d99nXidTZyC1ROVRtjtp7NJRDve","name":"jakarta timur"},{"id_seq":"5f5472c85ab798bbe5920772e9eda1fc5205ecebfd5c1a5e4096a0f43d47c911eece1927a7f8faa8eb309b83d4b0c53959f975f673678177ad16db70aa1c0b845k5UoETaEBL1W7ps13CPAySVslm","name":"jakarta selatan"},{"id_seq":"98f618d6c2f48f1001b40fac2adb17bd20f4bc6af93c6d41f6c21ef59b41b47924fa258de3b43184863556a226fd4265326f9a19851543b268ce2efe0430f26bD7zaZQy6KkkdmIN2DbgGgVwU","name":"jakarta utara"}]|success get City|::1
+
+200122115111|adminmarga|operator_management/segment/getPlaza/jakarta%20barat|getProvince|[{"plaza_code":"PLZ10003","plaza_name":"MERUYA UTARA"}]|success get province|::1
+
+200122115151|adminmarga|operator_management/lane/saveLine|ADD LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"created_by":"adminmarga","gate_config":"{\"ip_address\":null,\"mac_address\":null,\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122120159|adminmarga|operator_management/segment/getProvince/62a9266b3703cd1ce9c1f126748bc6aaf40d7dcda3729619a729297419bad8f83b1c2503d28bc2cb622b9a60eaafedae4e24823a01c2910a641dc572295d9e08UUyHps13KOeps13jjIZd791H6rgwweq14|getProvince|[{"id_seq":"8e936db278a26b95eda12c99804c3d2bd68bb36b772c9c3bba7d58e054493b725248c6d8a02140e7f9f111bfe38d660038551a00a7d33c446825c4f6fde82d5b8QjSss11yGOLdXtlZejps133RGLgss11s","name":"DKI JAKARTA"},{"id_seq":"6341e90d3fdda6d07c69ad5bb797e52811a620cb132535b4977da501b8d49b94a91b00e8674f493f35d2e3e4a4b02c40b04b73bae3f945d8b8fe2000d02e1ab2ps13AHkmgCOYps13Zss11X1ss11FDeiNWCpQ","name":"BANTEN"}]|success get province|::1
+
+200122120201|adminmarga|operator_management/segment/getCity/8e936db278a26b95eda12c99804c3d2bd68bb36b772c9c3bba7d58e054493b725248c6d8a02140e7f9f111bfe38d660038551a00a7d33c446825c4f6fde82d5b8QjSss11yGOLdXtlZejps133RGLgss11s|getCity|[{"id_seq":"388061748300c1ad15b59f477891f2beabcedb966519ca921698f8790e923890a465c0a21c65649dc02666f2791ae04168c0f9f7d17893732d8875f584296756dxQxg5q9oOXVLOgjUDtwI1GA","name":"jakarta barat"},{"id_seq":"c5ef38c919c1c0a343b49c379bb4cb7304c6ab970a6b00c2b88f783e2c74c8f893bd4f76282ddb2573ff7251a774217400d42ef8ea9e87a03a71e673d39ca93cTUpyvcsk6u8ps13ueO42zHYcfGA","name":"jakarta timur"},{"id_seq":"eb6ab45cb3514abd96097ba6f25400f03fcac4ddf358618a73bc1fdf9b612a1ade02bd41ec8849a0dedea3ea04691751328d4dc0427153a372e1c6923eb97ca38bD1nZpmWLbq7G8gLnSMps13x5t","name":"jakarta selatan"},{"id_seq":"b98a8d05e26042d04cd2e0ed430395e06e4e808aac6515eb45787bfb8cf67382c0d41bc8664b2be756d4e405f2b02dc10623656685239490631bf46e3494e01eoCA1ps139VtavuNT91Xftz7ueKA","name":"jakarta utara"}]|success get City|::1
+
+200122120202|adminmarga|operator_management/segment/getPlaza/jakarta%20timur|getProvince|[{"plaza_code":"PLZ10004","plaza_name":"MERUYA SELATAN"}]|success get province|::1
+
+200122120240|adminmarga|operator_management/lane/saveLine|ADD LANE|{"plaza_code":"PLZ10004","name":"LINE1","gate_status":"1","deduct_status":"1","status":1,"created_by":"adminmarga","gate_config":"{\"ip_address\":\"1.1.1.1\",\"mac_address\":\"11.11.11.11\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01034000\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122120441|adminmarga|operator_management/lane/saveELine|EDIT LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"updated_by":"adminmarga","gate_config":"{\"ip_address\":\"1.2.2.2.2\",\"mac_address\":\"11.22.33.44\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122140533|adminmarga|operator_management/lane/saveELine|EDIT LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"updated_by":"adminmarga","gate_config":"{\"ip_address\":\"2.2.2.2.2.2\",\"mac_address\":\"11.22.33.44\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122140651|adminmarga|operator_management/lane/saveELine|EDIT LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"updated_by":"adminmarga","gate_config":"{\"ip_address\":\"2.2.2.2.2.2\",\"mac_address\":\"11.22.33.44\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122141120|adminmarga|operator_management/lane/saveELine|EDIT LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"updated_by":"adminmarga","gate_config":"{\"ip_address\":\"2.2.2.2.2.2\",\"mac_address\":\"11.22.33.44\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122141221|adminmarga|operator_management/lane/saveELine|EDIT LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"updated_by":"adminmarga","gate_config":"{\"ip_address\":\"2.2.2.2.2.2\",\"mac_address\":\"11.22.33.44\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200122141735|adminmarga|operator_management/lane/saveELine|EDIT LANE|{"plaza_code":"PLZ10003","name":"LINE 1","gate_status":"1","deduct_status":"0","status":1,"updated_by":"adminmarga","gate_config":"{\"ip_address\":\"2.2.2.2.2.2\",\"mac_address\":\"11.22.33.44\",\"bca\":{\"merchant_id\":\"000885000686575\",\"terminal_id\":\"EPT03071\"},\"bni\":{\"merchant_id\":\"000100214394231\",\"terminal_id\":\"14423137\"},\"bri\":{\"merchant_id\":\"000001987030040\",\"terminal_id\":\"10561680\"},\"mandiri\":{\"merchant_id\":\"000000000640103\",\"terminal_id\":\"01030200\"}}"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+

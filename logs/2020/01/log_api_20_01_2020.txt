@@ -1,0 +1,80 @@
+200120115745|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sk menteri","route_code":null,"golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120115746|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sk menteri","route_code":null,"golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120134615|adminmarga|http://localhost/etc_cms/logout|logout||{"code":"1","message":"Berhasil logout"}|::1
+
+200120134636|adminmarga|http://localhost/etc_cms/login|login|{"username":"adminmarga"}|{"code":"1","message":"Login success. "}|::1
+
+200120134726|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"aa","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 13:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120134726|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"aa","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 13:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120134738|adminmarga|fare_management/fare/setApprove|set End Time|{"fare_status":"1","approve_by":"adminmarga","approve_on":"2020-01-20 13:47:38"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200120134746|adminmarga|fare_management/fare/setApprove|set End Time|{"fare_status":"-5","approve_by":"adminmarga","approve_on":"2020-01-20 13:47:46"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200120135127|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"s","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135127|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"s","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135139|adminmarga|fare_management/fare/setApprove|set End Time|{"fare_status":"1","approve_by":"adminmarga","approve_on":"2020-01-20 13:51:39"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200120135248|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"ma","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135248|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"ma","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135259|adminmarga|fare_management/fare/setApprove|set End Time|{"fare_status":"1","approve_by":"adminmarga","approve_on":"2020-01-20 13:52:59"}|{"code":1,"message":"Data Succesfull Saved"}|::1
+
+200120135451|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135451|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135920|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 13:05","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120135920|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 13:05","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140032|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sa","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140032|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sa","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140122|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:05","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140122|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:05","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140317|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"fs","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140317|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"fs","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140448|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"kk","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140448|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"kk","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140640|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sa","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140640|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"sa","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140736|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"fsdf","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140737|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"fsdf","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140822|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140822|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140902|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"aaa","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:10","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140902|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"aaa","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:10","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140945|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"fda","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120140945|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"fda","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120141041|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"as","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-21 00:05","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120141041|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"as","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-21 00:05","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120141149|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100004","golongan1":"2000","golongan2":"3000","golongan3":"4000","golongan4":"5000","golongan5":"6000","golongan6":"7000","fare_status":2,"fare_start_time":"2020-01-22 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
+200120141149|adminmarga|fare_management/fare/saveImport|ADD Fare For Route|{"file_name":"a","route_code":"RTC100005","golongan1":"1000","golongan2":"2000","golongan3":"3000","golongan4":"4000","golongan5":"4400","golongan6":"3200","fare_status":2,"fare_start_time":"2020-01-22 00:00","fare_operator":"10","created_by":"adminmarga"}|Sukses menyimpan Data|::1
+
