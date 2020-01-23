@@ -108,40 +108,41 @@
         <div class="clearfix"></div>
 
         <div class="page-container">
-            <!-- <div class='row'> -->
-            <div class="col-md-12" style=" margin-top:20px;">
-                <div class="col-md-4" style="background-color: grey;">
+            <div class="col-md-8"></div>
+            <div class="col-md-4" style="margin-top: 20px;">
 
-                    <div class="potret body" style="background-color: #3B5998;">
-                        <div class="form-group" style="margin-left: 10px;margin-top:10px;">
-                            <label>Nama Lengkap</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                        </div>
-                        <div class="form-group"style="margin-left: 10px;margin-top:10px;">
-                            <label>Nama Lengkap</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                        </div>
-                        <div class="form-group"style="margin-left: 10px;margin-top:10px;">
-                            <label>Nama Lengkap</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                        </div>
-                        <div class="form-group"style="margin-left: 10px;margin-top:10px;">
-                            <label>Nama Lengkap</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                        </div>
-                        <div class="form-group" style="margin-left: 10px;margin-top:10px;">
-                            <label>Nama Lengkap</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                        </div>
+                <div class="potret body" style="background-color: #cccccc;border-radius:25px !important;padding-bottom: 1px;">
+                    <div class="form-group" style="padding-top: 10px; padding-left: 10px;">
+                        <label>Nama Lengkap</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                    </div>
+                    <div class="form-group" style=" padding-left: 10px;">
+                        <label>Nama Lengkap</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                    </div>
+                    <div class="form-group" style=" padding-left: 10px;">
+                        <label>Nama Lengkap</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                    </div>
+                    <div class="form-group" style=" padding-left: 10px;">
+                        <label>Nama Lengkap</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                    </div>
+                    <div class="form-group" style="padding-left: 10px;">
+                        <label>Nama Lengkap</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
+        </div>
+
+        <!-- </div> -->
+        <div class="page-container">
 
             <div class="col-md-12">
                 <div class="content center" style=" margin-top:20px;">
@@ -171,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 pt-5 pb-5 footer" style="margin-top: 5px;padding-top:5px;padding-bottom:5px;">
+        <div class="footer" style="margin-top: 25px;padding-top:25px;padding-bottom:25px;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-xs-12 about-company" style="margin-top:10px;">
