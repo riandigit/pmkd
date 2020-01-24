@@ -31,13 +31,6 @@
     <!-- <link href="<?php echo base_url() ?>assets/pages/css/login-4.min.css" rel="stylesheet" type="text/css" /> -->
 
     <style>
-    body
-        {
-            background-image: url(assets/img/images1.jpg);
-            background-repeat: no-repeat;
-            background-size: 100%100%;
-            background-attachment:fixed;
-        }
         @media (max-width: 480px) {
             .login .content {
                 width: 298px !important;
@@ -92,12 +85,12 @@
         }
     </style>
 
-<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo" >
+<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
     <div class="page-wrapper">
-        <div class="page-header navbar navbar-fixed-top"> 
-		
+        <div class="page-header navbar navbar-fixed-top" style="background-color: #3B5998;">
+            <div class="page-header-inner ">
                 <div class="page-logo">
-                    <a href="<?php echo site_url(); ?>">					
+                    <a href="<?php echo site_url(); ?>">
                         <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="logo" class="logo-default" width="120" />
                     </a>
                     <!-- <div class="menu-toggler sidebar-toggler dropdown-menu-default">
@@ -119,41 +112,12 @@
         </div>
         <div class="clearfix"></div>
 
-        <div class="page-container" style="padding-top: 10px; padding-left: 10px;">
-            <div class="col-md-9">
-            <div class="content center" style=" margin-top:20px;">
-                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px; border-radius:25px !important; height:320px;">
-                        <h3 style="color: #ffffff!important;">
-                            VISI
-                        </h3>
-                        <p style="color: #ffffff!important;">
-                            “<b>1 Korintus 3:9 dan 1 Petrus 2:9-10 :</b><br>
-                            Menjadi kawan sekerja Allah untuk menyatakan rahmat Allah kepada dunia.
-                            Dalam bahasa inggris : <i> to be God’s fellow-workers to manifest God’s mercy to the world </i> , dan didalam Bahasa Karo diartikan <i> Aron Diiata guna jadi pasu-pasu man isi doni.</i>”
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px;border-radius:25px !important;height:320px;">
-                        <img src="<?php echo base_url(); ?>assets/img/logo-permata-gbkp-baru.png" alt="logo" class="center" style=" margin-top:10px; display: block;margin-left: auto;  margin-right: auto;width: 50%;" />
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012;border-radius:25px !important;margin-right:4 px;height:320px;">
-                        <div class="form-group">
-
-                            <h3 style="color: #ffffff!important;">Misi</h3>
-                            <p style="color: #ffffff!important;">
-                                1.Mengembangkan spiritual jemaat berbasis Alkitab<br>
-                                2.Mempererat persaudaraan PERMATA GBKP yang saling menopang dan membangun<br>
-                                3.Memperkokoh sinergi jaringan ORGANISASI PERMATA GBKP<br>
-                                4.Menggali dan mengembangkan potensi PERMATA GBKP<br>
-                                5.Meningkatkan rasa kemanusiaan dan keutuhan ciptaan Allah<br>
-                            </p>
-
-                        </div>
-                    </div>
-                </div></div>
-            <div class="col-md-3" style="margin-top: 20px;">
+        <div class="page-container" style="background-image: url(assets/img/gambar.png)">
+            <div class="col-md-8"></div>
+            <div class="col-md-4" style="margin-top: 20px;">
 
                 <div class="potret body" style="background-color: #cccccc63;border-radius:25px !important;padding-bottom: 1px;">
-                    <?php echo form_open('main/main/action_add', 'id="ff" autocomplete="off"'); ?>
+                    <?php echo form_open('main/main/action_add', 'id="ff" autocomplete="on"'); ?>
 
                     <div class="form-group" style="padding-top: 10px; padding-left: 10px;">
                         <div class="row">
@@ -208,13 +172,49 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-sm btn-add pull-left" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
+                                <button type="submit" class="btn btn-sm btn-add pull-right" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
                             </div>
                         </div>
 
                     </div>
                     <?php echo form_close(); ?>
 
+                </div>
+            </div>
+        </div>
+
+        <!-- </div> -->
+        <div class="page-container">
+
+            <div class="col-md-12">
+                <div class="content center" style=" margin-top:20px;">
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px; border-radius:25px !important; height:320px;">
+                        <h3>
+                            VISI
+                        </h3>
+                        <p style="color: #0f4e03!important;">
+                            “<b>1 Korintus 3:9 dan 1 Petrus 2:9-10 :</b><br>
+                            Menjadi kawan sekerja Allah untuk menyatakan rahmat Allah kepada dunia.
+                            Dalam bahasa inggris : <i> to be God’s fellow-workers to manifest God’s mercy to the world </i> , dan didalam Bahasa Karo diartikan <i> Aron Diiata guna jadi pasu-pasu man isi doni.</i>”
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px;border-radius:25px !important;height:320px;">
+                        <img src="<?php echo base_url(); ?>assets/img/logo-permata-gbkp-baru.png" alt="logo" class="center" style=" margin-top:10px; display: block;margin-left: auto;  margin-right: auto;width: 50%;" />
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012;border-radius:25px !important;margin-right:4 px;height:320px;">
+                        <div class="form-group">
+
+                            <h3>Misi</h3>
+                            <p style="color: #0f4e03!important;">
+                                1.Mengembangkan spiritual jemaat berbasis Alkitab<br>
+                                2.Mempererat persaudaraan PERMATA GBKP yang saling menopang dan membangun<br>
+                                3.Memperkokoh sinergi jaringan ORGANISASI PERMATA GBKP<br>
+                                4.Menggali dan mengembangkan potensi PERMATA GBKP<br>
+                                5.Meningkatkan rasa kemanusiaan dan keutuhan ciptaan Allah<br>
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,9 +227,12 @@
                     <div class="col-lg-3 col-xs-12 col-md-3  col-sm-3 links">
                         <h4 class="mt-lg-0 mt-sm-3">Links</h4>
                         <ul class="m-0 p-0">
-                            <li><img src="<?= base_url();?>assets/img/ig.png" width="220" alt=""></li>
-                            <li><img src="<?= base_url();?>assets/img/wa.png" width="220" alt=""></li>
-                            <li><img src="<?= base_url();?>assets/img/email.png" width="220" alt=""></li>
+                            <li>- <a href="#">Lorem ipsum</a></li>
+                            <li>- <a href="#">Nam mauris velit</a></li>
+                            <li>- <a href="#">Etiam vitae mauris</a></li>
+                            <li>- <a href="#">Fusce scelerisque</a></li>
+                            <li>- <a href="#">Sed faucibus</a></li>
+                            <li>- <a href="#">Mauris efficitur nulla</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-xs-12 col-md-4  col-sm-4 location">

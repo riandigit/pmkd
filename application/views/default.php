@@ -58,7 +58,7 @@
 
 	<title><?php if (isset($title) && $title != '') {
 				echo $title . ' - ';
-			} ?> PMKD</title>
+			} ?> PKMD</title>
 
 	<!-- <link href="<?php echo base_url(); ?>assets/pages/css/googletapis.css" rel='stylesheet' type='text/css'> -->
 

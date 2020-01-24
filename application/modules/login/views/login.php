@@ -168,7 +168,12 @@
                   if (obj.success)
                   {
                     // window.location.replace("<?php echo site_url('home'); ?>");
+                    if(obj.status ==1){
                     window.location="<?php echo site_url('home'); ?>";
+                    }else{
+                      window.location="<?php echo site_url('main/data'); ?>";
+
+                    }
                   } else {
                     $('.alert-danger', $('.login-form')).show();
                     $('#alert-message span').text(obj.error);

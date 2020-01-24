@@ -67,12 +67,13 @@ class Login extends CI_Controller{
             );
 
             $this->session->set_userdata($session);
-
+           
             $message['success'] = 'Login success. ';
             echo json_encode ($message);
             $res = array(
                 "code" => "1",
-                "message" => $message['success']
+                "message" => $message['success'],
+                "status" =>$user->status_user,
             );
         }else {
             $message['error'] = 'Username tidak terdaftar. ';
