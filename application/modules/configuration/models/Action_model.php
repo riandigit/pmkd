@@ -1,15 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * -------------------------
- * CLASS NAME : Groups_model
- * -------------------------
- *
- * @author     Robai <robai.rastim@gmail.com>
- * @copyright  2018
- *
- */
+
 
 class Action_model extends CI_Model {
 

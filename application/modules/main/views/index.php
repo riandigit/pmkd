@@ -21,6 +21,7 @@
 
     <link href="<?php echo base_url() ?>assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() ?>assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php echo base_url(); ?>assets/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
 
     <link href="<?php echo base_url() ?>assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
     <link href="<?php echo base_url(); ?>assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
@@ -78,6 +79,10 @@
         .footer .copyright p {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
+
+        .select2-container--default .select2-results__option[aria-disabled=true] {
+            display: none;
+        }
     </style>
 
 <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
@@ -112,56 +117,68 @@
             <div class="col-md-4" style="margin-top: 20px;">
 
                 <div class="potret body" style="background-color: #cccccc63;border-radius:25px !important;padding-bottom: 1px;">
+                    <?php echo form_open('main/main/action_add', 'id="ff" autocomplete="on"'); ?>
+
                     <div class="form-group" style="padding-top: 10px; padding-left: 10px;">
                         <div class="row">
                             <div class="col-md-12">
                                 <label>NIK :</label>
                                 <div class="input-group center">
-                                    <input type="text" class="form-control " placeholder="Email Address">
+                                    <input type="text" name="nik" class="form-control" placeholder="Nama" required>
+
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label>Nama Lengkap</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Email Address">
+                                    <input type="text" name="nama" class="form-control" placeholder="Nama" required>
+
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label>Asal Runggun</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label>Asal Runggun</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Email Address">
+                                <label>Runggun</label>
+                                <div class="input-group select2-bootstrap-prepend">
+                                    <select class="form-control" onChange="getGbkp(this.value)" id="runggun" name="runggun">
+                                        <option value="">Pilih</option>
+                                        <option value="1">GBKP</option>
+                                        <option value="2">NON-GBKP</option>
+                                    </select>
+                                    <select class="form-control  select2" id="gbkp" name="gbkp">
+                                        <option value="">Pilih</option>
+                                    </select>
+                                    <input type="text" name="gbkptext" id="gbkptext" class="form-control" placeholder="GBKP" required>
+
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label>Alamat</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Email Address">
+                                    <input type="text" name="alamat" class="form-control" placeholder="Nama" required>
+
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label>UserName:</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Email Address">
-                                 </div>
+                                    <input type="text" name="username" class="form-control" placeholder="Nama" required>
+
+                                </div>
                             </div>
                             <div class="col-md-12">
-                                <label>UserName:</label>
+                                <label>Password:</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Email Address">
-                                 </div>
+                                    <input type="text" name="password" class="form-control" placeholder="Nama" required>
+
+                                </div>
                             </div>
                             <div class="col-md-12">
-                                <button onclick="" class="btn btn-sm btn-add pull-right" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
+                                <button type="submit" class="btn btn-sm btn-add pull-right" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
                             </div>
                         </div>
 
                     </div>
+                    <?php echo form_close(); ?>
+
                 </div>
             </div>
         </div>
@@ -185,14 +202,18 @@
                         <img src="<?php echo base_url(); ?>assets/img/logo-permata-gbkp-baru.png" alt="logo" class="center" style=" margin-top:10px; display: block;margin-left: auto;  margin-right: auto;width: 50%;" />
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012;border-radius:25px !important;margin-right:4 px;height:320px;">
-                        <h3>Misi</h3>
-                        <p style="color: #0f4e03!important;">
-                            1.Mengembangkan spiritual jemaat berbasis Alkitab<br>
-                            2.Mempererat persaudaraan PERMATA GBKP yang saling menopang dan membangun<br>
-                            3.Memperkokoh sinergi jaringan ORGANISASI PERMATA GBKP<br>
-                            4.Menggali dan mengembangkan potensi PERMATA GBKP<br>
-                            5.Meningkatkan rasa kemanusiaan dan keutuhan ciptaan Allah<br>
-                        </p>
+                        <div class="form-group">
+
+                            <h3>Misi</h3>
+                            <p style="color: #0f4e03!important;">
+                                1.Mengembangkan spiritual jemaat berbasis Alkitab<br>
+                                2.Mempererat persaudaraan PERMATA GBKP yang saling menopang dan membangun<br>
+                                3.Memperkokoh sinergi jaringan ORGANISASI PERMATA GBKP<br>
+                                4.Menggali dan mengembangkan potensi PERMATA GBKP<br>
+                                5.Meningkatkan rasa kemanusiaan dan keutuhan ciptaan Allah<br>
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -242,8 +263,62 @@
     <script src="<?php echo base_url() ?>assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
     <!-- <script src="<?php echo base_url() ?>assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script> -->
+    <script src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>assets/global/scripts/app.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/js/global.js" type="text/javascript"></script>
     <!-- <script src="<?php echo base_url() ?>assets/pages/scripts/login-4.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#gbkptext").hide();
+            $('.select2').select2();
+            $('#gbkp').next(".select2-container").hide();
+            validateForm('#ff', function(url, data) {
+                postData(url, data);
+            });
+        });
+
+        function getGbkp(stateID) {
+            
+            console.log(stateID);
+            if (stateID == 1) {
+                $('#gbkp').next(".select2-container").show();
+                $("#gbkptext").hide();
+
+                $.ajax({
+                    url: '<?php echo site_url() ?>main/main/getGbkp/',
+                    type: "GET",
+                    dataType: "json",
+                    beforeSend: function() {
+                        unBlockUiId('box')
+                    },
+                    success: function(data) {
+                        unBlockUiId('box')
+                        console.log(data);
+                        $('select[name="gbkp"]').empty();
+                        $('select[name="gbkp"]').append('<option value="">PILIH</option>');
+                        $.each(data, function(key, value) {
+                            $('select[name="gbkp"]').append('<option value="' + value.id_seq + '">' + value.name + '</option>');
+                        });
+                    },
+                    error: function() {
+                        toastr.error('Silahkan Hubungi Administrator', 'Gagal');
+                    },
+
+                    complete: function() {
+                        $('#box').unblock();
+                    }
+                });
+            } else if(stateID == 2) {
+               $('#gbkptext').show();
+               $('#gbkp').next(".select2-container").hide();
+
+            }else{
+                $("#gbkptext").hide();
+                $('#gbkp').next(".select2-container").hide();
+
+            }
+        }
+    </script>
 
 </body>
 

@@ -1,15 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * -----------------------
- * CLASS NAME : Menu_model
- * -----------------------
- *
- * @author     Robai <robai.rastim@gmail.com>
- * @copyright  2018
- *
- */
 
 class Menu_model extends CI_Model {
 
