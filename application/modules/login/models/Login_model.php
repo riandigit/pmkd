@@ -8,7 +8,7 @@ class Login_model extends MY_Model
         $this->db->select('mg.id as group_id, ms.*');
         $this->db->join('tbl_user_group mg', 'ms.user_group_id = mg.id');
         $this->db->where('ms.username', $username);
-        $this->db->where('ms.status_user = 1 ');
+        $this->db->where('ms.status = 1 ');
         $this->db->limit(1);
         $q   = $this->db->get('tbl_user ms');
         $res ='failed';
@@ -56,7 +56,7 @@ class Login_model extends MY_Model
         $this->db->select('mg.id as group_id, ms.*');
         $this->db->join('tbl_user_group mg', 'ms.user_group_id = mg.id');
         $this->db->where('ms.username', $username);
-        $this->db->where('ms.status_user = 1 ');
+        $this->db->where('ms.status = 1 ');
         $this->db->limit(1);
 
         return $this->db->get('tbl_user ms');      

@@ -34,17 +34,6 @@ class Login extends CI_Controller{
             "username" => $username
         );
 
-        // // pengecekan chapcha
-        // if ($this->session->userdata('ratcha') <> $ratcha) {
-        //     $message['error'] = 'Captcha tidak cocok.';
-        //     echo json_encode($message);
-        //     $res = array(
-        //         "code" => "0",
-        //         "message" => $message['error']
-        //     );
-        //     exit;
-        // }
-
         // pengecekan user
         if($user){
 
@@ -72,8 +61,7 @@ class Login extends CI_Controller{
                 'logged_in'    => 1,
                 'id'           => $user->id,
                 'group_id'     => $user->group_id,
-                'firstname'    => $user->first_name,
-                'lastname'     => $user->last_name,
+                'firstname'    => $user->nama,
                 'username'     => $user->username,
                 'operator_cs_id' => $this->enc->encode($user->operator_id),
             );

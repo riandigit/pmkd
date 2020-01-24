@@ -146,7 +146,7 @@
                                     <select class="form-control  select2" id="gbkp" name="gbkp">
                                         <option value="">Pilih</option>
                                     </select>
-                                    <input type="text" name="gbkptext" id="gbkptext" class="form-control" placeholder="GBKP" required>
+                                    <input type="text" name="gbkptext" id="gbkptext" class="form-control" placeholder="GBKP" >
 
                                 </div>
                             </div>
@@ -167,7 +167,7 @@
                             <div class="col-md-12">
                                 <label>Password:</label>
                                 <div class="input-group">
-                                    <input type="text" name="password" class="form-control" placeholder="Nama" required>
+                                    <input type="password" name="password" class="form-control" placeholder="Password" required>
 
                                 </div>
                             </div>
@@ -272,13 +272,54 @@
             $("#gbkptext").hide();
             $('.select2').select2();
             $('#gbkp').next(".select2-container").hide();
+            // validateForm('#ff', function(url, data) {
+            //     postData(url, data);
+            // });
             validateForm('#ff', function(url, data) {
-                postData(url, data);
+
+                if($('#gbkp').val()==''){
+                    data['gbkp']=''
+                }
+                $.ajax({
+                    url: url,
+                    data: data,
+                    type: 'POST',
+                    dataType: 'json',
+
+                    beforeSend: function() {
+                        unBlockUiId('box')
+                    },
+
+                    success: function(json) {
+                        if (json.code == 1) {
+
+                            setTimeout(function() {
+                                setTimeout(function() {
+                                    window.location.href ="<?=base_url('login')?>";
+                                }, 1);
+
+                            }, 1);
+                            toastr.success(json.message, 'Sukses');
+                        } else {
+                            toastr.error(json.message, 'Gagal');
+                            closeModal();
+
+                        }
+                    },
+
+                    error: function() {
+                        toastr.error('Silahkan Hubungi Administrator', 'Gagal');
+                    },
+
+                    complete: function() {
+                        $('#box').unblock();
+                    }
+                });
             });
         });
 
         function getGbkp(stateID) {
-            
+
             console.log(stateID);
             if (stateID == 1) {
                 $('#gbkp').next(".select2-container").show();
@@ -308,11 +349,11 @@
                         $('#box').unblock();
                     }
                 });
-            } else if(stateID == 2) {
-               $('#gbkptext').show();
-               $('#gbkp').next(".select2-container").hide();
+            } else if (stateID == 2) {
+                $('#gbkptext').show();
+                $('#gbkp').next(".select2-container").hide();
 
-            }else{
+            } else {
                 $("#gbkptext").hide();
                 $('#gbkp').next(".select2-container").hide();
 
