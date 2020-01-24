@@ -107,35 +107,60 @@
         </div>
         <div class="clearfix"></div>
 
-        <div class="page-container">
+        <div class="page-container" style="background-image: url(assets/img/gambar.png)">
             <div class="col-md-8"></div>
             <div class="col-md-4" style="margin-top: 20px;">
 
-                <div class="potret body" style="background-color: #cccccc;border-radius:25px !important;padding-bottom: 1px;">
+                <div class="potret body" style="background-color: #cccccc63;border-radius:25px !important;padding-bottom: 1px;">
                     <div class="form-group" style="padding-top: 10px; padding-left: 10px;">
-                        <label>Nama Lengkap</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                    </div>
-                    <div class="form-group" style=" padding-left: 10px;">
-                        <label>Nama Lengkap</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                    </div>
-                    <div class="form-group" style=" padding-left: 10px;">
-                        <label>Nama Lengkap</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                    </div>
-                    <div class="form-group" style=" padding-left: 10px;">
-                        <label>Nama Lengkap</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
-                    </div>
-                    <div class="form-group" style="padding-left: 10px;">
-                        <label>Nama Lengkap</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>NIK :</label>
+                                <div class="input-group center">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Nama Lengkap</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Asal Runggun</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Asal Runggun</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Alamat</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>UserName:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                 </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label>UserName:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control " placeholder="Email Address">
+                                 </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button onclick="" class="btn btn-sm btn-add pull-right" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -175,10 +200,10 @@
         <div class="footer" style="margin-top: 25px;padding-top:25px;padding-bottom:25px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-xs-12 about-company" style="margin-top:10px;">
+                    <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5 about-company" style="margin-top:10px;">
                         <img src="<?php echo base_url(); ?>assets/img/footer.jpg" width="120" height="180" alt="logo">
                     </div>
-                    <div class="col-lg-3 col-xs-12 links">
+                    <div class="col-lg-3 col-xs-12 col-md-3  col-sm-3 links">
                         <h4 class="mt-lg-0 mt-sm-3">Links</h4>
                         <ul class="m-0 p-0">
                             <li>- <a href="#">Lorem ipsum</a></li>
@@ -189,7 +214,7 @@
                             <li>- <a href="#">Mauris efficitur nulla</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-xs-12 location">
+                    <div class="col-lg-4 col-xs-12 col-md-4  col-sm-4 location">
                         <h4 class="mt-lg-0 mt-sm-4">Location</h4>
                         <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
                         <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
