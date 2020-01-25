@@ -62,7 +62,7 @@ class Main extends CI_Controller
             'status_anggota' => $statusanggota,
             'asal_gereja' => $gbkptext,
             'username' => $username,
-            'user_group_id' => 2,
+            'user_group_id' => 3,
             'operator_id' => $gbkp,
             'password' => $password,
             'created_by' => $nama,
@@ -124,7 +124,7 @@ class Main extends CI_Controller
         $id = strtoupper($post['id']);
         $nama = strtoupper($post['nama']);
         $tempatlahir = strtoupper($post['tempatlahir']);
-        $tanggallahir = strtoupper($post['tanggallahir']);
+        $tanggallahir =date("Y-m-d", strtotime($post['tanggallahir']));
         $nohp = strtoupper($post['nohp']);
         $email = strtoupper($post['email']);
         $pekerjaan = $post['pekerjaan'];

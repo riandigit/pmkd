@@ -10,15 +10,15 @@
    <div class="portlet box blue" id="box">
        <?php echo headerForm($title) ?>
        <div class="portlet-body">
-           <?php echo form_open('master/island/action_edit', 'id="ff" autocomplete="off"'); ?>
+           <?php echo form_open('master/gbkp/action_edit', 'id="ff" autocomplete="off"'); ?>
            <div class="box-body">
               <div class="form-group">
                <div class="row">
                    <div class="col-sm-6 form-group">
                    <input type="hidden" name="id" id="id" value="<?php echo $this->enc->encode($row->id_seq) ?>">
 
-                       <label>Island <span class="wajib">*</span></label>
-                       <input type="text" class="form-control" name="island" id="island" placeholder="Island" value="<?=$row->name?>" required>
+                       <label>Nama :<span class="wajib">*</span></label>
+                       <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama" value="<?=$row->nama?>" required>
                    </div>
                </div>
            </div>

@@ -26,25 +26,12 @@
 				</div>
 
 				<div class="portlet-body">
-					<div class="table-toolbar">
-						<div class="row">
-							<div class="col-sm-12">   
-
-							</div>
-						</div>
-					</div>
-
 					<table class="table table-striped table-bordered table-hover" id="dataTables">
 						<thead>
 							<tr>
-								<th>No</th>
-								<th>Nama Golongan</th>
-								<th>Panjang Minimal (mm)</th>
-								<th>Panjang Maksimal (mm)</th>
-								<th>Keterangan</th>
-								<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                Aksi
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+								<th>NO</th>
+								<th>NAME</th>
+								<th>Action</th>
 							</tr>
 						</thead>
 					</table>
@@ -60,7 +47,7 @@ var table= {
 	loadData: function() {
 		$('#dataTables').DataTable({
 			"ajax": {
-				"url": "<?php echo site_url('master/vehicle_class') ?>",
+				"url": "<?php echo site_url('master/Gbkp/Gbkplist') ?>",
 				"type": "POST",
 				"data": function(d) {
 					// d.customer = document.getElementById('customer').value;
@@ -71,11 +58,8 @@ var table= {
 			"processing": true,
 			"columns": [
 					{"data": "no", "orderable": false, "className": "text-center"},
-					{"data": "vehicle_class_name", "orderable": true, "className": "text-left"},
-					{"data": "min_length", "orderable": true, "className": "text-right"},
-					{"data": "max_length", "orderable": true, "className": "text-right"},
-					{"data": "desc", "orderable": true, "className": "text-left"},
-					{"data": "actions", "orderable": false, "className": "text-center"},
+					{"data": "nama", "orderable": false, "className": "text-left"},
+					{"data": "actions", "orderable": true, "className": "text-left"},
 			],
 			"lengthMenu": [
 				[10, 25, 50, 100],
@@ -119,11 +103,6 @@ var table= {
 	
 	jQuery(document).ready(function () {
 		table.init();
-
-		$("#customer").on("change",function(){
-			table.reload();
-		});
-
 	});
 
 </script>

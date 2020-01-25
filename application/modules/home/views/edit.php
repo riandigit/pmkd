@@ -19,16 +19,9 @@
                         </div>
 
                         <div class="col-sm-4 form-group">
-                            <label>Nama Depan</label>
-                            <input type="text" class="form-control"  name="first_name" id="first_name" placeholder="First Name"  autocomplete="off" value="<?php echo $detail->first_name?>" required>
+                            <label>Nama</label>
+                            <input type="text" class="form-control"  name="first_name" id="first_name" placeholder="First Name"  autocomplete="off" value="<?php echo $detail->full_name?>" required>
                         </div>
-
-                        <div class="col-sm-4 form-group">
-                            <label>Nama Belakang</label>
-                            <input type="Text" class="form-control"  name="last_name" id="last_name" placeholder="Last Name"  autocomplete="off" value="<?php echo $detail->last_name?>">
-                        </div>
-
-
                         <div class="col-sm-4 form-group">
                             <label>No Telpon</label>
                             <input type="text" class="form-control"  name="phone" id="phone" placeholder="Telpon" value="<?php echo $detail->phone?>" onkeypress="return isNumberKey(event)" minlength="10" required>

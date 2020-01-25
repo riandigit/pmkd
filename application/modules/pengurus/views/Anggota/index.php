@@ -30,7 +30,20 @@
                         <thead>
                             <tr>
                                 <th class="text-center">No.</th>
-                                <th>Name</th>
+                                <th>NIK</th>
+                                <th>Nama</th>
+                                <th>Tempat Lahir</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Pendidikan</th>
+                                <th>Pekerjaan</th>
+                                <th>Asal Gereja</th>
+                                <th>Alamat</th>
+                                <th>Domisili</th>
+                                <th>Foto</th>
+                                <th>Jenis Kelamin</th>
+                                <th>NO HP</th>
+                                <th>Email</th>
+                                <th>Status Anggota</th>
                                 <th class="text-center">Action</th>
                             </tr>
                         </thead>
@@ -51,7 +64,7 @@
             // begin first table
             table.dataTable({
                 "ajax": {
-                    "url": "<?php echo site_url('Pengurus/anggota/listanggota') ?>/<?=$group?>",
+                    "url": "<?php echo site_url('Pengurus/anggota/Anggotalist') ?>",
                     "type": "POST",
                     "data": function(d) {},
                 },
@@ -64,7 +77,59 @@
                         "width": 20
                     },
                     {
-                        "data": "name",
+                        "data": "nik",
+                        "orderable": true
+                    },
+                    {
+                        "data": "nama",
+                        "orderable": true
+                    },
+                    {
+                        "data": "tempat_lahir",
+                        "orderable": true
+                    },
+                    {
+                        "data": "tanggal_lahir",
+                        "orderable": true
+                    },
+                    {
+                        "data": "pendidikan",
+                        "orderable": true
+                    },
+                    {
+                        "data": "pekerjaan",
+                        "orderable": true
+                    },
+                    {
+                        "data": "asal_gereja",
+                        "orderable": true
+                    },
+                    {
+                        "data": "alamat",
+                        "orderable": true
+                    },
+                    {
+                        "data": "domisili",
+                        "orderable": true
+                    },
+                    {
+                        "data": "foto",
+                        "orderable": true
+                    },
+                    {
+                        "data": "jk",
+                        "orderable": true
+                    },
+                    {
+                        "data": "phone",
+                        "orderable": true
+                    },
+                    {
+                        "data": "email",
+                        "orderable": true
+                    },
+                    {
+                        "data": "status_anggota",
                         "orderable": true
                     },
                     {
@@ -108,11 +173,63 @@
                 "pagingType": "bootstrap_full_number",
                 "columnDefs": [{ // set default column settings
                         'orderable': true,
-                        // 'targets': [0]
+                        'targets': [0]
                     },
                     {
                         "searchable": true,
-                        "targets": [0]
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
+                    },
+                    {
+                        "searchable": true,
+                        "targets": [1]
                     },
                     {
                         'orderable': false,

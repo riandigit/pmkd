@@ -5,12 +5,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PKMD</title>
+    <title>PMKD</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="anggota pkmd">
+    <meta name="description" content="anggota pmkd">
     <meta name="author" content="josep">
-    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/img/logo-permata-gbkp-baru.png'); ?>">
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/img/fav.png'); ?>">
 
     <link href="<?php echo base_url() ?>assets/pages/css/googletapis.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() ?>assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -158,21 +158,21 @@
                     <div class="form-group" style="padding-top: 10px; padding-left: 10px;">
                         <div class="row">
                             <div class="col-md-12">
-                            <label><b>NIK :</b></label>
+                                <label>NIK :</label>
                                 <div class="input-group center">
                                     <input type="text" name="nik" class="form-control" placeholder="Nama" required>
-                                    
+
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label><b>Nama Lengkap</b></label>
+                                <label>Nama Lengkap</label>
                                 <div class="input-group">
                                     <input type="text" name="nama" class="form-control" placeholder="Nama" required>
 
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label><b>Asal Runggun</b></label>
+                                <label>Runggun</label>
                                 <div class="input-group select2-bootstrap-prepend">
                                     <select class="form-control" onChange="getGbkp(this.value)" id="runggun" name="runggun">
                                         <option value="">Pilih</option>
@@ -187,21 +187,21 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label><b>Alamat</b></label>
+                                <label>Alamat</label>
                                 <div class="input-group">
                                     <input type="text" name="alamat" class="form-control" placeholder="Nama" required>
 
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label><b>UserName:</b></label>
+                                <label>UserName:</label>
                                 <div class="input-group">
                                     <input type="text" name="username" class="form-control" placeholder="Nama" required>
 
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label><b>Password:</b></label>
+                                <label>Password:</label>
                                 <div class="input-group">
                                     <input type="password" name="password" class="form-control" placeholder="Password" required>
 
@@ -224,33 +224,21 @@
                     <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5 about-company" style="margin-top:10px;">
                         <img src="<?php echo base_url(); ?>assets/img/footer.jpg" width="120" height="180" alt="logo">
                     </div>
-
                     <div class="col-lg-3 col-xs-12 col-md-3  col-sm-3 links">
-                        <h4 class="mt-lg-0 mt-sm-3"></h4>
+                        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
                         <ul class="m-0 p-0">
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
+                            <li><img src="<?= base_url();?>assets/img/ig.png" width="220" alt=""></li>
+                            <li><img src="<?= base_url();?>assets/img/wa.png" width="220" alt=""></li>
+                            <li><img src="<?= base_url();?>assets/img/email.png" width="220" alt=""></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-xs-12 col-md-4  col-sm-4 location">
-                        <h4 class="mt-lg-0 mt-sm-4">Contact:</h4>
-
-<a href="http://mailto:medandelitua@permatagbkp.org">
-  <img src="./assets/img/email.png" alt="email" width="280px" height="50px">
-</a>
-
-<a href="http://api.whatsapp.com/send?phone=6281367144717">
-  <img src="./assets/img//wa.png" alt="wa" width="280px" height="50px">
-</a>
-
-<a href="http://instagram.com/permataklasismedan_delitua">
-  <img src="./assets/img/ig.png" alt="ig" width="280px" height="50px">
-  </div>
-</div>
+                        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+                        <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                        <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                    </div>
+                </div>
                 <div class="row mt-5">
                     <div class="col copyright">
                         <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>

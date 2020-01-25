@@ -164,6 +164,7 @@
                 },
                 success: function(data) {
                   var obj = jQuery.parseJSON(data);
+                  console.log(obj.status)
 
                   if (obj.success)
                   {

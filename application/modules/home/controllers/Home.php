@@ -11,9 +11,11 @@ class Home extends MY_Controller {
 		$this->load->model('global_model');
 		$this->load->helper('nutech_helper');
 		$this->load->library('bcrypt');
+		$this->load->model('M_global', '_model');
 
+        $this->_runggun = $this->session->userdata('runggun_id');
 		$this->_module='home';
-		$this->_table='core.t_mtr_user';
+		$this->_table='tbl_user';
 	}
 
 	public function index() {
@@ -53,7 +55,6 @@ class Home extends MY_Controller {
 		// $user_id=$this->enc->decode($id);
 
 		$first_name=$this->input->post('first_name');
-		$last_name=$this->input->post('last_name');
 		$no_telpon=$this->input->post('phone');
 		$user_id=$this->enc->decode($this->input->post('id'));
 
@@ -63,8 +64,7 @@ class Home extends MY_Controller {
 		$this->form_validation->set_rules('phone', 'phone', 'required');
 
 		$data=array(
-			'first_name'=>$first_name,
-			'last_name'=>$last_name,
+			'nama'=>$first_name,
 			'phone'=>$no_telpon,
 			'updated_on'=>date("Y-m-d H:i:s"),
 			'updated_by'=>$this->session->userdata('username'),
@@ -92,7 +92,32 @@ class Home extends MY_Controller {
 		}
 
 	}
+	public function Waitinglist()
+    {
+        validate_ajax();
+        $list = $this->home->getDataWaiting();
+        echo json_encode($list);
+	}
+	public function permit($id)
+	{
 
+		validate_ajax();
+		$id = $this->enc->decode($id);
+		$data = array(
+			'status_user' => 1,
+			'updated_by' => $this->session->userdata('username'),
+			'updated_on' => date("Y-m-d H:i:s"),
+		);
+
+		$deleted  = $this->_model->delete($id, $data, 'tbl_user', 'id');
+		if ($deleted) {
+			$response =  json_api(1, 'Data Successfull Deleted');
+		} else {
+
+			$response = json_encode($this->db->error());
+		}		
+		echo $response;
+	}
 	public function change_password($id)
 	{
 

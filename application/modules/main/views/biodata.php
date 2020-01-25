@@ -318,6 +318,7 @@ if($row->status_user==2){
         $(document).ready(function() {
             $('.date-picker').datepicker({
                 'orientation': 'bottom',
+                'format': 'yyyy-mm-dd',
                 // autoclose: true
             });
             $('#ff').submit(function(e) {

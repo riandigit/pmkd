@@ -1,20 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_transponder extends MY_Model{
+class M_gbkp extends MY_Model{
 
 	public function __construct() {
 		parent::__construct();
-        $this->_module = 'master/transponder';
-	}
-
-    public function dataList(){
+        $this->_module = 'master/gbkp';
+    }
+    public function dataListgbkp(){
 		$start = $this->input->post('start');
 		$length = $this->input->post('length');
 		$draw = $this->input->post('draw');
 		$search = $this->input->post('search');
-
-		$customer = $this->enc->decode($this->input->post('customer'));
 
 		$order = $this->input->post('order');
 		$order_column = $order[0]['column'];
@@ -22,19 +19,25 @@ class M_transponder extends MY_Model{
 		$iLike        = trim(strtoupper($this->db->escape_like_str($search['value'])));
 
 		$field = array(
-			0 =>'id',
+			0 =>'id_seq',
 		);
 
 		$order_column = $field[$order_column];
 
 		$where = " WHERE status = 1";
+        if (!empty($search['value'])) {
 
-		if(!empty($search['value']))
-		{
-			$where .=" AND (plate_number::varchar ilike '%".$search['value']."%' or stnk::varchar ilike '%".$search['value']."%' or owner_name ilike '%".$search['value']."%')";
+			$where .= '
+					and (nama ilike \'%' . $search['value'] . '%\' 
+					 )
+				';
 		}
 
-		$sql = "SELECT * FROM app.t_mtr_transponder $where";
+		$sql = "SELECT
+					id_seq , nama
+				FROM
+					tbl_gbkp
+				$where";
 
 		$query         = $this->db->query($sql);
 		$records_total = $query->num_rows();
@@ -51,7 +54,7 @@ class M_transponder extends MY_Model{
 		$i  	= ($start + 1);
 
 		foreach ($rows_data as $row) {
-			$id_enc = $this->enc->encode($row->id);
+			$id_enc = $this->enc->encode($row->id_seq);
 			$row->number = $i;
 			$row->status = "";
 
@@ -64,6 +67,7 @@ class M_transponder extends MY_Model{
      		$row->actions .= generate_button_new($this->_module, 'delete', $delete_url);
 
      		$row->no = $i;
+             $row->id_seq = '';
 
 			$rows[] = $row;
 			$i++;
@@ -75,41 +79,9 @@ class M_transponder extends MY_Model{
 			'recordsFiltered'=> $records_total,
 			'data'           => $rows
 		);
-	}
-
-	public function count_code($date)
-	{
-		return $this->db->query("SELECT COUNT(*) FROM app.t_mtr_transponder WHERE created_on::date = '$date' AND status = 1")->row();
-	}
-
-	public function check_data($table, $where="")
-    {
-        return $this->db->query("select * from $table $where")->row();
     }
-
-	public function get_edit($id)
+    public function get_edit($id)
 	{
-		return $this->db->query("SELECT * FROM app.t_mtr_transponder WHERE id = $id")->row();
+		return $this->db->query("SELECT id_seq,nama FROM tbl_gbkp WHERE id_seq = $id")->row();
 	}
-
-	public function check_obu($obu_number, $id)
-	{
-		return $this->db->query("SELECT
-									obu_number	
-								FROM
-									app.t_mtr_obu OBU
-								WHERE
-									OBU.obu_number = '$obu_number' AND obu_id != $id")->row();
-	}
-
-	public function get_class()
-	{
-		return $this->db->query("SELECT * FROM app.t_mtr_vehicle_class WHERE vehicle_class_status = 1")->result();
-	}
-
-	public function get_customer()
-	{
-		return $this->db->query("SELECT * FROM app.t_mtr_customer WHERE customer_status = 1")->result();
-	}
-
 }
