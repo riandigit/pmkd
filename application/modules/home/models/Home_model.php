@@ -8,11 +8,11 @@ class Home_model extends CI_Model {
 		
 		return $this->db->query("SELECT
 			UG.NAME AS group_name,
-			UU.nama as full_name,
+			UU.nama as full_name,g.nama as gereja,UU.nik as ktp,
 			UU.* 
 			FROM
 			tbl_user UU
-			LEFT JOIN tbl_user_group UG ON UU.user_group_id = UG.ID 
+			LEFT JOIN tbl_user_group UG ON UU.user_group_id = UG.ID left join tbl_gbkp g on UU.runggun_id = g.id_seq 
 			WHERE
 			UU.ID = $id");
 	}
@@ -38,7 +38,7 @@ class Home_model extends CI_Model {
 		$this->db->where($where);
 		$this->db->delete($table, $data);
 	}
-	public function getDataWaiting()
+	public function getDataWaiting($runggun)
 	{
 
 		$data = array();
@@ -57,6 +57,7 @@ class Home_model extends CI_Model {
 		);
 		$order_column = $field[$order_column];
 
+
         $where = 'where id is not null and user_group_id = 3 and status_user =2 ';
        
 		if (!empty($search['value'])) {
@@ -65,6 +66,10 @@ class Home_model extends CI_Model {
 					and (nama ilike \'%' . $search['value'] . '%\' or nik ilike \'%' . $search['value'] . '%\' 
 					 )
 				';
+		}
+
+		if($runggun != 4){
+			$where .='and u.runggun_id = '.$runggun;
 		}
 
 		$sql =   '
@@ -87,17 +92,17 @@ class Home_model extends CI_Model {
 			$checks = '';
 			if ($delete) {
 				
-				$urldelete = site_url('home/home/permit/') . '' . ($this->enc->encode($r['id']));
-				$action .= '<button onClick="confirmationAction(\'Apakah Anda yakin ingin mengizinkan User ini ?\', \'' . $urldelete . '\')" class="btn btn-danger btn-icon btn-xs btn-dtgrid" title="Delete" ' . $checks . '><i class="fa fa-exchange"></i></button> ';
+				$urldelete = site_url('home/home/permitForm/') . '' . ($this->enc->encode($r['id']));
+				$action .= '<button onClick="showModal(\'' . $urldelete. '\')" class="btn btn-danger btn-icon btn-xs btn-dtgrid" title="Delete" ' . $checks . '><i class="fa fa-exchange"></i></button> ';
 			}
 			
 
-			$cek = PUBPATH . "assets/img/fotoanggota/" . $r['foto'];
-			$logo = base_url('assets/img/fotoanggota/') . $r['foto'];
-			if (!file_exists($cek)) {
+			// $cek = PUBPATH . "assets/img/fotoanggota/" . $r['foto'];
+			// $logo = base_url('assets/img/fotoanggota/') . $r['foto'];
+			// if (!file_exists($cek)) {
 
-				$logo = base_url('assets/img/noimage.png');
-			}
+			// 	$logo = base_url('assets/img/noimage.png');
+			// }
 			if($r['jk'] ==1){
 				$r['jk'] = 'Laki-laki';
 
@@ -115,9 +120,9 @@ class Home_model extends CI_Model {
 
 			$r['no'] = $count;
 			$count++;
-			$image = '<img  width="200" height="121" src="' . $logo . '" alt="">';
+			// $image = '<img  width="200" height="121" src="' . $logo . '" alt="">';
 			// $image = $tumbnail;
-			$r['foto'] = $image;
+			// $r['foto'] = $image;
 			$r['action'] = $action;
 			$r['id'] 	= '';
 			$data_rows[] = $r;
@@ -128,5 +133,23 @@ class Home_model extends CI_Model {
 			'recordsFiltered' => $records_total,
 			'data'           => $data_rows
 		);
+	}
+	public function getWaiting($runggun)
+	{
+
+		
+        $where = 'where id is not null and user_group_id = 3 and status_user =2 ';
+
+
+		if($runggun != 0){
+			$where .='and u.runggun_id = '.$runggun;
+		}
+
+		$sql =   '
+		select u.*,g.nama as runggun from tbl_user u left join tbl_gbkp g on u.runggun_id = g.id_seq
+		' . $where . ' ';
+		$query = $this->db->query($sql);
+		
+		return $query->num_rows();
 	}
 }

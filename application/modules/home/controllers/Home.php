@@ -25,12 +25,20 @@ class Home extends MY_Controller {
 		);
 		$this->load->view('default', $data);
 	}
+	public function waitings() {
+		$data = array(
+			'title'   => 'Waiting',
+			'content' => 'home/waiting',
+		);
+		$this->load->view('default', $data);
+	}
 
 	public function profile() {
 		$data = array(
 			'title'   => 'Profile',
 			'content' => 'home/profile',
 			'detail'=>$this->home->get_profile()->row(),
+			'edit'=> generate_button_new($this->_module, 'Edit',  site_url($this->_module . '/edit'))
 		);
 		$this->load->view('default', $data);
 	}
@@ -95,16 +103,33 @@ class Home extends MY_Controller {
 	public function Waitinglist()
     {
         validate_ajax();
-        $list = $this->home->getDataWaiting();
+        $list = $this->home->getDataWaiting($this->enc->decode($this->_runggun));
         echo json_encode($list);
 	}
-	public function permit($id)
+	public function Waiting()
+    {
+        validate_ajax();
+        $list = $this->home->getWaiting($this->enc->decode($this->_runggun));
+        echo json_encode($list);
+	}
+	public function permitForm($id){
+		validate_ajax();
+        $data['title'] = "Permit";
+        $data['id'] = $id;
+        $this->load->view('home/permit', $data);
+	}
+	public function permit()
 	{
 
 		validate_ajax();
+		// var_dump($this->input->post());exit;
+		$id=$this->input->post('id');
+		$permit = $this->input->post('permit');
+		$status = $this->input->post('status');
 		$id = $this->enc->decode($id);
 		$data = array(
-			'status_user' => 1,
+			'keanggotaan' => $status,
+			'status_user' => $permit,
 			'updated_by' => $this->session->userdata('username'),
 			'updated_on' => date("Y-m-d H:i:s"),
 		);

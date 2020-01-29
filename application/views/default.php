@@ -252,6 +252,26 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			var c = '<?=$this->session->userdata('group_id'); ?>';
+
+			$.ajax({
+				url: "<?= site_url("home/Waiting") ?>",
+				type: "post", // To protect sensitive data
+				success: function(response) {
+					if (c != 3) {
+						if (response > 0) {
+							Swal.fire({
+								icon: 'error',
+								title: 'Oops...',
+								text: 'Terdapat Anggota baru yang menunggu izin kamu loh!'
+							})
+						}
+					}
+
+
+				}
+			});
+
 			$('ul li a').each(function(e) {
 				uri = '<?php echo $slug ?>';
 				ahref = $('a[href="' + uri + '"]');

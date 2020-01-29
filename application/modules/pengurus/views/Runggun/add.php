@@ -25,14 +25,14 @@
                                         <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
                                     </div>
                                     <label>Tanggal Lahir</label>
-                                        <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
-                                            <input type="text" name="tanggallahir" class="form-control">
-                                            <span class="input-group-btn">
-                                                <button class="btn default" type="button">
-                                                    <i class="fa fa-calendar"></i>
-                                                </button>
-                                            </span>
-                                        </div>
+                                    <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                        <input type="text" name="tanggallahir" class="form-control">
+                                        <span class="input-group-btn">
+                                            <button class="btn default" type="button">
+                                                <i class="fa fa-calendar"></i>
+                                            </button>
+                                        </span>
+                                    </div>
                                     <div class="form-group">
                                         <label>Alamat:</label>
                                         <input type="text" class="form-control" autocomplete="off" placeholder="Alamat" name="alamat" id="alamat" required>
@@ -48,13 +48,25 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Pendidikan:</label>
-                                        <input type="text" class="form-control" autocomplete="off" placeholder="Pendidikan" name="pendidikan" id="pendidikan" required>
-                                        <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
+                                        <select class="form-control  select2" id="pendidikan" style="width: 100%" name="pendidikan">
+                                            <option value="">Pilih</option>
+                                            <?php foreach ($pendidikan as $key => $value) { ?>
+                                                <option value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                    <?php echo $value->nama ?>
+                                                </option>
+                                            <?php } ?>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label>Pekerjaan:</label>
-                                        <input type="text" class="form-control" autocomplete="off" placeholder="Pekerjaan" name="pekerjaan" id="pekerjaan" required>
-                                        <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
+                                        <select class="form-control  select2" id="pekerjaan" style="width: 100%" name="pekerjaan">
+                                            <option value="">Pilih</option>
+                                            <?php foreach ($pekerjaan as $key => $value) { ?>
+                                                <option value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                    <?php echo $value->nama ?>
+                                                </option>
+                                            <?php } ?>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label>Jenis Kelamin:</label>
@@ -66,7 +78,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Asal Gereja:</label>
-                                        <select class="form-control  select2" id="gbkp"  name="gbkp">
+                                        <select class="form-control  select2" id="gbkp" name="gbkp">
                                             <option value="">Pilih</option>
                                             <?php foreach ($gbkp as $key => $value) { ?>
                                                 <option value="<?php echo $this->enc->encode($value->id_seq) ?>">
@@ -96,22 +108,12 @@
                                     <div class="form-group">
                                         <label>Password:</label>
                                         <input type="text" class="form-control" autocomplete="off" placeholder="Password" name="password" id="password" required>
-                                        <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
-                                    </div>
-                                    <div class="fileinput fileinput-new" data-provides="fileinput">
-                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                            <img src="<?= base_url('assets/img/noimage.png'); ?>" alt=""> </div>
-                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
-                                        <div>
-                                            <span class="btn default btn-file">
-                                                <span class="fileinput-new"> Select image </span>
-                                                <span class="fileinput-exists"> Change </span>
-                                                <input type="file" name="image" id="image"> </span>
-                                            <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix margin-top-10">
-                                        <span class="label label-danger">NOTE!</span> Image preview only works in IE10+, FF3.6+, Safari6.0+, Chrome6.0+ and Opera11.1+. In older browsers the filename is shown instead.
+                                        <label>Keanggotaan:</label>
+                                        <select class="form-control" id="anggota" name="anggota">
+                                            <option value="">Pilih</option>
+                                            <option value="AKTIF">AKTIF</option>
+                                            <option value="TIDAK AKTIF">TIDAK AKTIF</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -129,11 +131,11 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('.date-picker').datepicker({
-                'orientation': 'bottom',
-                'format': 'yyyy-mm-dd',
-                // autoclose: true
-            });
-            $('.select2').select2();
+            'orientation': 'bottom',
+            'format': 'yyyy-mm-dd',
+            // autoclose: true
+        });
+        $('.select2').select2();
 
         $('#ff').submit(function(e) {
             e.preventDefault();

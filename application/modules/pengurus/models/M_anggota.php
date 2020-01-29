@@ -28,9 +28,9 @@ class M_anggota extends CI_Model
 		);
 		$order_column = $field[$order_column];
 
-        $where = 'where id is not null and user_group_id = 3 and status_user = 1 and status = 1 ';
-        if($runggun > 0){
-            $where .=' and runggun_id = \'' . $this->enc->decode($runggun). '\'';
+        $where = 'where id is not null and user_group_id = 3 and status_user = 1 and u.status = 1 ';
+        if($runggun != 4){
+            $where .=' and runggun_id = \'' .$runggun. '\'';
         }
 		if (!empty($search['value'])) {
 
@@ -41,7 +41,7 @@ class M_anggota extends CI_Model
 		}
 
 		$sql =   '
-		select * from tbl_user  
+		select u.*,g.nama as gereja , pe.nmpekerjaan, pen.nmpendidikan from tbl_user u left join tbl_gbkp g on u.runggun_id = g.id_seq left join pekerjaan pe on u.pekerjaan = pe.kdpekerjaan left join pendidikan pen on u.pendidikan = pen.kdpendidikan
 		' . $where . ' ';
 		$query = $this->db->query($sql);
 		$records_total = $query->num_rows();
@@ -49,7 +49,6 @@ class M_anggota extends CI_Model
 		if ($length != -1) {
 			$sql .= " LIMIT {$length} OFFSET {$start}";
 		}
-		// var_dump($runggun);exit;
 		$query = $this->db->query($sql);
 		$count = 1;
 		$data_rows = array();
@@ -71,13 +70,6 @@ class M_anggota extends CI_Model
 			if ($edit) {
 				$action .= '<button type="button" class="btn btn-info btn-icon btn-xs btn-dtgrid" title="Edit" onclick="showModal(\'' . site_url('pengurus/anggota/editAnggota/') . '' . ($this->enc->encode($r['id'])) . '\')" ><i class="icon-pencil"></i></button>';
 			}
-
-			$cek = PUBPATH . "assets/img/fotoanggota/" . $r['foto'];
-			$logo = base_url('assets/img/fotoanggota/') . $r['foto'];
-			if (!file_exists($cek)) {
-
-				$logo = base_url('assets/img/noimage.png');
-			}
 			if($r['jk'] ==1){
 				$r['jk'] = 'Laki-laki';
 
@@ -88,9 +80,6 @@ class M_anggota extends CI_Model
 
 			$r['no'] = $count;
 			$count++;
-			$image = '<img  width="200" height="121" src="' . $logo . '" alt="">';
-			// $image = $tumbnail;
-			$r['foto'] = $image;
 			$r['action'] = $action;
 			$r['id'] 	= '';
 			$data_rows[] = $r;
@@ -114,5 +103,13 @@ class M_anggota extends CI_Model
 	public function getAnggota($id){
         $qry = $this->db->query('SELECT * FROM tbl_user where id = \'' . $id . '\'')->row();
 		return $qry;
-    }
+	}
+	public function getPekerjaan(){
+        $qry = $this->db->query('SELECT kdpekerjaan as id_seq,nmpekerjaan as nama FROM pekerjaan')->result();
+		return $qry;
+	}
+	public function getPendidikan(){
+        $qry = $this->db->query('SELECT kdpendidikan as id_seq,nmpendidikan as nama FROM pendidikan')->result();
+		return $qry;
+	}
 }

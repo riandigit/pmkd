@@ -28,7 +28,7 @@ class M_runggun extends CI_Model
 		);
 		$order_column = $field[$order_column];
 
-        $where = 'where id is not null and user_group_id = 2 and status_user =1 and status = 1';
+        $where = 'where id is not null and user_group_id = 2 and status_user =1 and u.status = 1';
        
 		if (!empty($search['value'])) {
 
@@ -39,7 +39,7 @@ class M_runggun extends CI_Model
 		}
 
 		$sql =   '
-		select * from tbl_user  
+		select u.*,g.nama as gereja , pe.nmpekerjaan, pen.nmpendidikan from tbl_user   u left join tbl_gbkp g on u.runggun_id = g.id_seq left join pekerjaan pe on u.pekerjaan = pe.kdpekerjaan left join pendidikan pen on u.pendidikan = pen.kdpendidikan
 		' . $where . ' ';
 		$query = $this->db->query($sql);
 		$records_total = $query->num_rows();
@@ -68,13 +68,6 @@ class M_runggun extends CI_Model
 			if ($edit) {
 				$action .= '<button type="button" class="btn btn-info btn-icon btn-xs btn-dtgrid" title="Edit" onclick="showModal(\'' . site_url('pengurus/runggun/editRunggun/') . '' . ($this->enc->encode($r['id'])) . '\')" ><i class="icon-pencil"></i></button>';
 			}
-
-			$cek = PUBPATH . "assets/img/fotoanggota/" . $r['foto'];
-			$logo = base_url('assets/img/fotoanggota/') . $r['foto'];
-			if (!file_exists($cek)) {
-
-				$logo = base_url('assets/img/noimage.png');
-			}
 			if($r['jk'] ==1){
 				$r['jk'] = 'Laki-laki';
 
@@ -85,9 +78,6 @@ class M_runggun extends CI_Model
 
 			$r['no'] = $count;
 			$count++;
-			$image = '<img  width="200" height="121" src="' . $logo . '" alt="">';
-			// $image = $tumbnail;
-			$r['foto'] = $image;
 			$r['action'] = $action;
 			$r['id'] 	= '';
 			$data_rows[] = $r;

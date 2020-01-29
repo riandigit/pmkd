@@ -37,7 +37,7 @@ class M_gbkp extends MY_Model{
 					id_seq , nama
 				FROM
 					tbl_gbkp
-				$where";
+	{$where}";
 
 		$query         = $this->db->query($sql);
 		$records_total = $query->num_rows();

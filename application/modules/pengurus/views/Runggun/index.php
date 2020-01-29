@@ -39,7 +39,7 @@
                                 <th>Asal Gereja</th>
                                 <th>Alamat</th>
                                 <th>Domisili</th>
-                                <th>Foto</th>
+                                <th>Keanggotaan</th>
                                 <th>Jenis Kelamin</th>
                                 <th>NO HP</th>
                                 <th>Email</th>
@@ -93,15 +93,15 @@
                         "orderable": true
                     },
                     {
-                        "data": "pendidikan",
+                        "data": "nmpendidikan",
                         "orderable": true
                     },
                     {
-                        "data": "pekerjaan",
+                        "data": "nmpekerjaan",
                         "orderable": true
                     },
                     {
-                        "data": "asal_gereja",
+                        "data": "gereja",
                         "orderable": true
                     },
                     {
@@ -113,7 +113,7 @@
                         "orderable": true
                     },
                     {
-                        "data": "foto",
+                        "data": "keanggotaan",
                         "orderable": true
                     },
                     {

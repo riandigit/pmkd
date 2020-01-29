@@ -120,12 +120,13 @@
             display: none;
         }
     </style>
-<?php $readonly ='';
-$gambar=base_url().'assets/img/noimage.png';
-if($row->status_user==2){
-    $gambar = base_url('assets/img/fotoanggota/') . $row->foto;
-    $readonly='disabled';
-}?>
+    <?php $readonly = '';
+    $gambar = base_url() . 'assets/img/noimage.png';
+    if ($row->status_user == 2) {
+        $gambar = base_url('assets/img/fotoanggota/') . $row->foto;
+        $readonly = 'disabled';
+    } ?>
+
 <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
     <div class="page-wrapper">
         <div class="page-header navbar navbar-fixed-top" style="background-color: #3B5998;">
@@ -157,16 +158,12 @@ if($row->status_user==2){
                                         <label>NIK :</label>
                                         <input type="text" name="nik" class="form-control" value="<?= $row->nik; ?>" readonly>
                                         <label>Nama Lengkap</label>
-
                                         <input type="text" name="nama" class="form-control" placeholder="Nama" value="<?= $row->nama; ?>" readonly>
-
                                         <label>Tempat Lahir</label>
-
-                                        <input type="text" name="tempatlahir" class="form-control" placeholder="Tempat Lahir"value="<?= $row->tempat_lahir; ?>"  required >
-
+                                        <input type="text" name="tempatlahir" class="form-control" placeholder="Tempat Lahir" value="<?= $row->tempat_lahir; ?>" required>
                                         <label>Tanggal Lahir</label>
                                         <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
-                                            <input type="text" name="tanggallahir" class="form-control" value="<?= $row->tanggal_lahir; ?>"  readonly>
+                                            <input type="text" name="tanggallahir" class="form-control" value="<?= $row->tanggal_lahir; ?>" readonly>
                                             <span class="input-group-btn">
                                                 <button class="btn default" type="button">
                                                     <i class="fa fa-calendar"></i>
@@ -174,36 +171,49 @@ if($row->status_user==2){
                                             </span>
                                         </div>
                                         <label>Pendidikan</label>
-
-                                        <input type="text" name="pendidikan" class="form-control" placeholder="Tempat Lahir" value="<?= $row->pendidikan; ?>"  required>
+                                        <div class="input-group select2-bootstrap-prepend">
+                                            <select class="form-control  select2" id="pendidikan" name="pendidikan">
+                                                <option value="">Pilih</option>
+                                                <?php foreach ($pendidikan as $key => $value) { ?>
+                                                    <option value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                        <?php echo $value->nama ?>
+                                                    </option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
 
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="col-md-12">
-                                            <label>Pekerjaan</label>
-
-                                            <input type="text" name="pekerjaan" class="form-control" placeholder="Tempat Lahir" value="<?= $row->pekerjaan; ?>"  required>
-                                            <label>No.hp</label>
-
-                                            <input type="text" name="nohp" class="form-control" placeholder="No Handphone"value="<?= $row->phone; ?>"  required>
-
-
-                                            <label>Email</label>
-
-                                            <input type="text" name="email" class="form-control" placeholder="Email" required value="<?= $row->email; ?>" >
-
-
-                                            <label>Alamat</label>
-
-                                            <input type="text" name="alamat" class="form-control" placeholder="Nama" readonly value="<?= $row->alamat; ?>">
-
-
-                                            <label>Domisili</label>
-
-                                            <input type="text" name="domisili" class="form-control" placeholder="Domisili" value="<?= $row->domisili; ?>"  required>
-
-
+                                        <label><b>Pekerjaan</b></label>
+                                        <div class="input-group select2-bootstrap-prepend">
+                                            <select class="form-control  select2" id="pekerjaan" name="pekerjaan">
+                                                <option value="">Pilih</option>
+                                                <?php foreach ($pekerjaan as $key => $value) { ?>
+                                                    <option value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                        <?php echo $value->nama ?>
+                                                    </option>
+                                                <?php } ?>
+                                            </select>
                                         </div>
+
+                                        <label>No.hp</label>
+
+                                        <input type="text" name="nohp" class="form-control" placeholder="No Handphone" value="<?= $row->phone; ?>" required>
+
+
+                                        <label>Email</label>
+
+                                        <input type="text" name="email" class="form-control" placeholder="Email" required value="<?= $row->email; ?>">
+
+
+                                        <label>Alamat</label>
+
+                                        <input type="text" name="alamat" class="form-control" placeholder="Nama" readonly value="<?= $row->alamat; ?>">
+
+
+                                        <label>Domisili</label>
+
+                                        <input type="text" name="domisili" class="form-control" placeholder="Domisili" value="<?= $row->domisili; ?>" required>
                                     </div>
                                     <div class="col-md-4">
                                         <label>Asal Gereja</label>
@@ -222,27 +232,13 @@ if($row->status_user==2){
                                             <option value="1">Laki-Laki</option>
                                             <option value="2">Wanita</option>
                                         </select>
-                                        <label>File (.jpg, .png)</label>
-                                        <div class="fileinput fileinput-new" data-provides="fileinput">
-                                            <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                                <img src="<?= $gambar; ?>" alt=""> </div>
-                                            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
-                                            <div>
-                                                <span class="btn default btn-file">
-                                                    <span class="fileinput-new"> Select image </span>
-                                                    <span class="fileinput-exists"> Change </span>
-                                                    <input type="file" name="image" id="image"> </span>
-                                                <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix margin-top-10">
-                                            <span class="label label-danger">NOTE!</span> Image preview only works in IE10+, FF3.6+, Safari6.0+, Chrome6.0+ and Opera11.1+. In older browsers the filename is shown instead.
-                                        </div>
+                                        <label>Keanggotaan :</label>
+                                        <input type="text" name="keanggotaan" class="form-control" value="AKTIF" readonly>
                                     </div>
 
                                 </div>
                                 <div class="col-md-4 pull-right">
-                                    <button type="submit" class="btn btn-sm btn-add pull-right" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar" <?=$readonly?> > Save & Send</button>
+                                    <button type="submit" class="btn btn-sm btn-add pull-right" style="    margin-top: 20px;margin-right: 10px;border-radius: 25px !important;background-color: aquamarine;" title="Daftar" <?= $readonly ?>> Save & Send</button>
                                 </div>
                             </div>
 
@@ -258,22 +254,31 @@ if($row->status_user==2){
                     <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5 about-company" style="margin-top:10px;">
                         <img src="<?php echo base_url(); ?>assets/img/footer.jpg" width="120" height="180" alt="logo">
                     </div>
+
                     <div class="col-lg-3 col-xs-12 col-md-3  col-sm-3 links">
-                        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                        <h4 class="mt-lg-0 mt-sm-3"></h4>
                         <ul class="m-0 p-0">
-                            <li>- <a href="#">Lorem ipsum</a></li>
-                            <li>- <a href="#">Nam mauris velit</a></li>
-                            <li>- <a href="#">Etiam vitae mauris</a></li>
-                            <li>- <a href="#">Fusce scelerisque</a></li>
-                            <li>- <a href="#">Sed faucibus</a></li>
-                            <li>- <a href="#">Mauris efficitur nulla</a></li>
+                            <li> <a href="#"></a></li>
+                            <li> <a href="#"></a></li>
+                            <li> <a href="#"></a></li>
+                            <li> <a href="#"></a></li>
+                            <li> <a href="#"></a></li>
+                            <li> <a href="#"></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-xs-12 col-md-4  col-sm-4 location">
-                        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
-                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-                        <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
-                        <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                        <h4 class="mt-lg-0 mt-sm-4">Contact:</h4>
+
+                        <a href="http://mailto:medandelitua@permatagbkp.org">
+                            <img src="<?= base_url(); ?>assets/img/email.png" alt="email" width="280px" height="50px">
+                        </a>
+
+                        <a href="http://api.whatsapp.com/send?phone=6281367144717">
+                            <img src="<?= base_url(); ?>assets/img//wa.png" alt="wa" width="280px" height="50px">
+                        </a>
+
+                        <a href="http://instagram.com/permataklasismedan_delitua">
+                            <img src="<?= base_url(); ?>assets/img/ig.png" alt="ig" width="280px" height="50px">
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -316,6 +321,7 @@ if($row->status_user==2){
     <script src="<?php echo base_url(); ?>assets/js/global.js" type="text/javascript"></script> -->
     <script type="text/javascript">
         $(document).ready(function() {
+            $('.select2').select2();
             $('.date-picker').datepicker({
                 'orientation': 'bottom',
                 'format': 'yyyy-mm-dd',

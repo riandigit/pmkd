@@ -31,19 +31,39 @@
     <!-- <link href="<?php echo base_url() ?>assets/pages/css/login-4.min.css" rel="stylesheet" type="text/css" /> -->
 
     <style>
-    body
-        {
+        body {
             background-image: url(assets/img/images1.jpg);
             background-repeat: no-repeat;
             background-size: 100%100%;
-            background-attachment:fixed;
+            background-attachment: fixed;
         }
+
         @media (max-width: 480px) {
             .login .content {
                 width: 298px !important;
             }
 
+            .a {
+                height: 100% !important;
+            }
+
         }
+
+        @media (max-width: 780px) {
+            .a {
+                height: 100% !important;
+            }
+
+            .b {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                display: table;
+            }
+
+        }
+
 
         .footer {
             background: #152f4f;
@@ -92,172 +112,186 @@
         }
     </style>
 
-<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo" >
+<body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
     <div class="page-wrapper">
-        <div class="page-header navbar navbar-fixed-top"> 
-		
-                <div class="page-logo">
-                    <a href="<?php echo site_url(); ?>">					
-                        <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="logo" class="logo-default" width="120" />
-                    </a>
-                    <!-- <div class="menu-toggler sidebar-toggler dropdown-menu-default">
+        <div class="page-header navbar navbar-fixed-top">
+
+            <div class="page-logo">
+                <a href="<?php echo site_url(); ?>">
+                    <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="logo" class="logo-default" width="120" />
+                </a>
+                <!-- <div class="menu-toggler sidebar-toggler dropdown-menu-default">
                         <span></span>
                     </div> -->
+            </div>
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> <span></span>
+            </a>
+            <div class="top-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="<?= base_url('login'); ?>">LOGIN</span>
+                            <!-- <i class="fa fa-angle-down"></i> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="page-container" style="padding-top: 10px; padding-left: 10px;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <div class="content" style=" margin-top:20px;">
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="background-color: #80808012; margin-right:4 px; border-radius:25px !important; height:320px;">
+                            <h3 style="color: #ffffff!important;">
+                                VISI
+                            </h3>
+                            <p style="color: #ffffff!important;">
+                                “<b>1 Korintus 3:9 dan 1 Petrus 2:9-10 :</b><br>
+                                Menjadi kawan sekerja Allah untuk menyatakan rahmat Allah kepada dunia.
+                                Dalam bahasa inggris : <i> to be God’s fellow-workers to manifest God’s mercy to the world </i> , dan didalam Bahasa Karo diartikan <i> Aron Diiata guna jadi pasu-pasu man isi doni.</i>”
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 a" style="background-color: #80808012; margin-right:4 px;border-radius:25px !important;height:320px;">
+                            <img src="<?php echo base_url(); ?>assets/img/logo-permata-gbkp-baru.png" alt="logo" class="center" style=" margin-top:10px; display: block;margin-left: auto;  margin-right: auto;width: 50%;" />
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="background-color: #80808012;border-radius:25px !important;margin-right:4 px;height:320px;">
+                            <div class="form-group">
+
+                                <h3 style="color: #ffffff!important;">Misi</h3>
+                                <p style="color: #ffffff!important;">
+                                    1.Mengembangkan spiritual jemaat berbasis Alkitab<br>
+                                    2.Mempererat persaudaraan PERMATA GBKP yang saling menopang dan membangun<br>
+                                    3.Memperkokoh sinergi jaringan ORGANISASI PERMATA GBKP<br>
+                                    4.Menggali dan mengembangkan potensi PERMATA GBKP<br>
+                                    5.Meningkatkan rasa kemanusiaan dan keutuhan ciptaan Allah<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> <span></span>
-                </a>
-                <div class="top-menu">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="">
-                            <a href="<?= base_url('login'); ?>">LOGIN</span>
-                                <!-- <i class="fa fa-angle-down"></i> -->
-                            </a>
-                        </li>
+                <div class="col-md-3 col-sm-12 col-xs-12" style="margin-top: 20px;">
+
+                    <div class="potret body b" style="background-color: #cccccc63;border-radius:25px !important;padding-bottom: 1px;">
+                        <?php echo form_open('main/main/action_add', 'id="ff" autocomplete="off"'); ?>
+
+                        <div class="form-group c" style="padding-top: 10px; padding-left: 10px;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label><b>NIK :</b></label>
+                                    <div class="input-group center">
+                                        <input type="text" name="nik" class="form-control" placeholder="Nama" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label><b>Nama Lengkap</b></label>
+                                    <div class="input-group">
+                                        <input type="text" name="nama" class="form-control" placeholder="Nama" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label><b>Keanggotaan</b></label>
+                                    <div class="input-group select2-bootstrap-prepend">
+                                        <select class="form-control" onChange="getGbkp(this.value)"  id="runggun" name="runggun">
+                                            <option value="">Pilih</option>
+                                            <option value="1">BIASA</option>
+                                            <option value="2">LUAR BIASA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label><b>Asal Runggun</b></label>
+                                    <div class="input-group select2-bootstrap-prepend">
+                                        <select class="form-control  select2" style="width:80%;" id="gbkp" name="gbkp">
+                                            <option value="">Pilih</option>
+                                            <?php foreach ($gbkp as $key => $value) { ?>
+                                                <option value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                    <?php echo $value->nama ?>
+                                                </option>
+                                            <?php } ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label><b>Alamat</b></label>
+                                    <div class="input-group">
+                                        <input type="text" name="alamat" class="form-control" placeholder="Nama" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label><b>UserName:</b></label>
+                                    <div class="input-group">
+                                        <input type="text" name="username" class="form-control" placeholder="Nama" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label><b>Password:</b></label>
+                                    <div class="input-group">
+                                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-sm btn-add pull-left" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <?php echo form_close(); ?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 25px;padding-top:25px;padding-bottom:25px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5 about-company" style="margin-top:10px;">
+                    <img src="<?php echo base_url(); ?>assets/img/footer.jpg" width="120" height="180" alt="logo">
+                </div>
+
+                <div class="col-lg-3 col-xs-12 col-md-3  col-sm-3 links">
+                    <h4 class="mt-lg-0 mt-sm-3"></h4>
+                    <ul class="m-0 p-0">
+                        <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li>
+                        <li> <a href="#"></a></li>
                     </ul>
                 </div>
+                <div class="col-lg-4 col-xs-12 col-md-4  col-sm-4 location">
+                    <h4 class="mt-lg-0 mt-sm-4">Contact:</h4>
+
+                    <a href="http://mailto:medandelitua@permatagbkp.org">
+                        <img src="<?= base_url(); ?>assets/img/email.png" alt="email" width="280px" height="50px">
+                    </a>
+
+                    <a href="http://api.whatsapp.com/send?phone=6281367144717">
+                        <img src="<?= base_url(); ?>assets/img//wa.png" alt="wa" width="280px" height="50px">
+                    </a>
+
+                    <a href="http://instagram.com/permataklasismedan_delitua">
+                        <img src="<?= base_url(); ?>assets/img/ig.png" alt="ig" width="280px" height="50px">
+                </div>
             </div>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="page-container" style="padding-top: 10px; padding-left: 10px;">
-            <div class="col-md-9">
-            <div class="content center" style=" margin-top:20px;">
-                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px; border-radius:25px !important; height:320px;">
-                        <h3 style="color: #ffffff!important;">
-                            VISI
-                        </h3>
-                        <p style="color: #ffffff!important;">
-                            “<b>1 Korintus 3:9 dan 1 Petrus 2:9-10 :</b><br>
-                            Menjadi kawan sekerja Allah untuk menyatakan rahmat Allah kepada dunia.
-                            Dalam bahasa inggris : <i> to be God’s fellow-workers to manifest God’s mercy to the world </i> , dan didalam Bahasa Karo diartikan <i> Aron Diiata guna jadi pasu-pasu man isi doni.</i>”
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012; margin-right:4 px;border-radius:25px !important;height:320px;">
-                        <img src="<?php echo base_url(); ?>assets/img/logo-permata-gbkp-baru.png" alt="logo" class="center" style=" margin-top:10px; display: block;margin-left: auto;  margin-right: auto;width: 50%;" />
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color: #80808012;border-radius:25px !important;margin-right:4 px;height:320px;">
-                        <div class="form-group">
-
-                            <h3 style="color: #ffffff!important;">Misi</h3>
-                            <p style="color: #ffffff!important;">
-                                1.Mengembangkan spiritual jemaat berbasis Alkitab<br>
-                                2.Mempererat persaudaraan PERMATA GBKP yang saling menopang dan membangun<br>
-                                3.Memperkokoh sinergi jaringan ORGANISASI PERMATA GBKP<br>
-                                4.Menggali dan mengembangkan potensi PERMATA GBKP<br>
-                                5.Meningkatkan rasa kemanusiaan dan keutuhan ciptaan Allah<br>
-                            </p>
-
-                        </div>
-                    </div>
-                </div></div>
-            <div class="col-md-3" style="margin-top: 20px;">
-
-                <div class="potret body" style="background-color: #cccccc63;border-radius:25px !important;padding-bottom: 1px;">
-                    <?php echo form_open('main/main/action_add', 'id="ff" autocomplete="off"'); ?>
-
-                    <div class="form-group" style="padding-top: 10px; padding-left: 10px;">
-                        <div class="row">
-                            <div class="col-md-12">
-                            <label><b>NIK :</b></label>
-                                <div class="input-group center">
-                                    <input type="text" name="nik" class="form-control" placeholder="Nama" required>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label><b>Nama Lengkap</b></label>
-                                <div class="input-group">
-                                    <input type="text" name="nama" class="form-control" placeholder="Nama" required>
-
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label><b>Asal Runggun</b></label>
-                                <div class="input-group select2-bootstrap-prepend">
-                                    <select class="form-control" onChange="getGbkp(this.value)" id="runggun" name="runggun">
-                                        <option value="">Pilih</option>
-                                        <option value="1">GBKP</option>
-                                        <option value="2">NON-GBKP</option>
-                                    </select>
-                                    <select class="form-control  select2" id="gbkp" name="gbkp">
-                                        <option value="">Pilih</option>
-                                    </select>
-                                    <input type="text" name="gbkptext" id="gbkptext" class="form-control" placeholder="GBKP" >
-
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label><b>Alamat</b></label>
-                                <div class="input-group">
-                                    <input type="text" name="alamat" class="form-control" placeholder="Nama" required>
-
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label><b>UserName:</b></label>
-                                <div class="input-group">
-                                    <input type="text" name="username" class="form-control" placeholder="Nama" required>
-
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label><b>Password:</b></label>
-                                <div class="input-group">
-                                    <input type="password" name="password" class="form-control" placeholder="Password" required>
-
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-sm btn-add pull-left" style="    margin-top: 20px;margin-right: 10px;width: 40%;border-radius: 25px !important;background-color: aquamarine;" title="Daftar"> Daftar</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <?php echo form_close(); ?>
-
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
                 </div>
             </div>
         </div>
-        <div class="footer" style="margin-top: 25px;padding-top:25px;padding-bottom:25px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5 about-company" style="margin-top:10px;">
-                        <img src="<?php echo base_url(); ?>assets/img/footer.jpg" width="120" height="180" alt="logo">
-                    </div>
-
-                    <div class="col-lg-3 col-xs-12 col-md-3  col-sm-3 links">
-                        <h4 class="mt-lg-0 mt-sm-3"></h4>
-                        <ul class="m-0 p-0">
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                            <li> <a href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 col-md-4  col-sm-4 location">
-                        <h4 class="mt-lg-0 mt-sm-4">Contact:</h4>
-
-<a href="http://mailto:medandelitua@permatagbkp.org">
-  <img src="./assets/img/email.png" alt="email" width="280px" height="50px">
-</a>
-
-<a href="http://api.whatsapp.com/send?phone=6281367144717">
-  <img src="./assets/img//wa.png" alt="wa" width="280px" height="50px">
-</a>
-
-<a href="http://instagram.com/permataklasismedan_delitua">
-  <img src="./assets/img/ig.png" alt="ig" width="280px" height="50px">
-  </div>
-</div>
-                <div class="row mt-5">
-                    <div class="col copyright">
-                        <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
     <script src="<?php echo base_url() ?>assets/global/plugins/respond.min.js"></script>
     <script src="<?php echo base_url() ?>assets/global/plugins/excanvas.min.js"></script>
@@ -278,16 +312,14 @@
     <!-- <script src="<?php echo base_url() ?>assets/pages/scripts/login-4.min.js" type="text/javascript"></script> -->
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#gbkptext").hide();
             $('.select2').select2();
-            $('#gbkp').next(".select2-container").hide();
             // validateForm('#ff', function(url, data) {
             //     postData(url, data);
             // });
             validateForm('#ff', function(url, data) {
 
-                if($('#gbkp').val()==''){
-                    data['gbkp']=''
+                if ($('#gbkp').val() == '') {
+                    data['gbkp'] = ''
                 }
                 $.ajax({
                     url: url,
@@ -304,7 +336,7 @@
 
                             setTimeout(function() {
                                 setTimeout(function() {
-                                    window.location.href ="<?=base_url('login')?>";
+                                    window.location.href = "<?= base_url('login') ?>";
                                 }, 1);
 
                             }, 1);
@@ -326,48 +358,6 @@
                 });
             });
         });
-
-        function getGbkp(stateID) {
-
-            console.log(stateID);
-            if (stateID == 1) {
-                $('#gbkp').next(".select2-container").show();
-                $("#gbkptext").hide();
-
-                $.ajax({
-                    url: '<?php echo site_url() ?>main/main/getGbkp/',
-                    type: "GET",
-                    dataType: "json",
-                    beforeSend: function() {
-                        unBlockUiId('box')
-                    },
-                    success: function(data) {
-                        unBlockUiId('box')
-                        console.log(data);
-                        $('select[name="gbkp"]').empty();
-                        $('select[name="gbkp"]').append('<option value="">PILIH</option>');
-                        $.each(data, function(key, value) {
-                            $('select[name="gbkp"]').append('<option value="' + value.id_seq + '">' + value.name + '</option>');
-                        });
-                    },
-                    error: function() {
-                        toastr.error('Silahkan Hubungi Administrator', 'Gagal');
-                    },
-
-                    complete: function() {
-                        $('#box').unblock();
-                    }
-                });
-            } else if (stateID == 2) {
-                $('#gbkptext').show();
-                $('#gbkp').next(".select2-container").hide();
-
-            } else {
-                $("#gbkptext").hide();
-                $('#gbkp').next(".select2-container").hide();
-
-            }
-        }
     </script>
 
 </body>

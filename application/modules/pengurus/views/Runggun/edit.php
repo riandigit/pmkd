@@ -9,8 +9,6 @@
                         <div class="row">
                             <div class="col-sm-12">
                             <input type="hidden" name="id" class="form-control" value="<?= $row->id; ?>" readonly>
-                            <input type="hidden" name="logolama" class="form-control" value="<?= $row->foto; ?>" readonly>
-
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>NIK:</label>
@@ -49,15 +47,33 @@
 
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="form-group">
+                                <div class="form-group">
                                         <label>Pendidikan:</label>
-                                        <input type="text" class="form-control" autocomplete="off" placeholder="Pendidikan" name="pendidikan" id="pendidikan" value="<?=$row->pendidikan?>" required>
-                                        <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
+                                        <select class="form-control  select2" id="pendidikan"  name="pendidikan">
+                                            <option value="">Pilih</option>
+                                            <?php foreach ($pendidikan as $key => $value) {
+                                                $selected='';
+                                                if($row->pendidikan == $value->id_seq){$selected='selected';}
+                                                ?>
+                                                <option <?=$selected;?> value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                    <?php echo $value->nama ?>
+                                                </option>
+                                            <?php } ?>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label>Pekerjaan:</label>
-                                        <input type="text" class="form-control" autocomplete="off" placeholder="Pekerjaan" name="pekerjaan" id="pekerjaan" value="<?=$row->pekerjaan?>" required>
-                                        <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
+                                        <select class="form-control  select2" id="pekerjaan"  name="pekerjaan">
+                                            <option value="">Pilih</option>
+                                            <?php foreach ($pekerjaan as $key => $value) {
+                                                $selected='';
+                                                if($row->pekerjaan == $value->id_seq){$selected='selected';}
+                                                ?>
+                                                <option <?=$selected;?> value="<?php echo $this->enc->encode($value->id_seq) ?>">
+                                                    <?php echo $value->nama ?>
+                                                </option>
+                                            <?php } ?>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label>Jenis Kelamin:</label>
@@ -97,22 +113,14 @@
                                     <div class="form-group">
                                         <label>Username:</label>
                                         <input type="text" class="form-control" autocomplete="off" placeholder="Email" name="username" id="username" value="<?=$row->username?>"  required>
-                                        <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
-                                    </div>
-                                    <div class="fileinput fileinput-new" data-provides="fileinput">
-                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                                            <img src="<?= base_url('assets/img/fotoanggota/').$row->foto; ?>" alt=""> </div>
-                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
-                                        <div>
-                                            <span class="btn default btn-file">
-                                                <span class="fileinput-new"> Select image </span>
-                                                <span class="fileinput-exists"> Change </span>
-                                                <input type="file" name="image" id="image"> </span>
-                                            <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput"> Remove </a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix margin-top-10">
-                                        <span class="label label-danger">NOTE!</span> Image preview only works in IE10+, FF3.6+, Safari6.0+, Chrome6.0+ and Opera11.1+. In older browsers the filename is shown instead.
+                                        <label>Keanggotaan:</label>
+                                        <select class="form-control" id="anggota" name="anggota">
+                                            <option value="">Pilih</option>
+                                           
+                                            <option  <?php if($row->keanggotaan == 'AKTIF'){ echo 'selected';}?>  value="AKTIF">AKTIF</option>
+                                            <option  <?php if($row->keanggotaan == 'TIDAK AKTIF'){ echo 'selected';}?>  value="TIDAK AKTIF">TIDAK AKTIF</option>
+                                        </select>
+                                         <!-- <span class="help-block"><b>* serial will be generated automatically</b></span> -->
                                     </div>
                                 </div>
                             </div>

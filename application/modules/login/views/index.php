@@ -34,8 +34,8 @@
           <div class="content">
               <!-- BEGIN LOGIN FORM -->
               <form class="login-form" id="form-login" action="<?php echo site_url('login/do_login'); ?>" method="post">
-                  <h2 class="form-title text-center">AFC</h2>
-                  <h4 class="text-center">Automatic Fare Collection</h4>
+                  <h2 class="form-title text-center">PKMD</h2>
+                  <h4 class="text-center">Sistem Administrasi</h4>
                   <div class="alert alert-danger display-hide" id="alert-message">
                       <button class="close" data-close="alert"></button>
                       <span> Enter any username and password. </span>

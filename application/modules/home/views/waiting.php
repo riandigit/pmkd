@@ -1,32 +1,26 @@
 <div class="page-content-wrapper">
-    <div class="page-content">
-        <div class="page-bar">
-            <ul class="page-breadcrumb">
-                <li>
-                    <?php echo '<a href="' . $url_home . '">' . $home; ?></a>
-                    <i class="fa fa-circle"></i>
-                </li>
-                <li>
-                    <span><?php echo $title; ?></span>
-                </li>
-            </ul>
-            <div class="page-toolbar">
-                <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom">
-                    <span class="thin uppercase hidden-xs" id="datetime"></span>
-                    <script type="text/javascript">
-                        window.onload = date_time('datetime');
-                    </script>
-                </div>
-            </div>
+  <div class="page-content">
+    <div class="page-bar">
+      <ul class="page-breadcrumb">
+        <li>
+          <span><?php echo $title; ?></span>
+        </li>
+      </ul>
+      <div class="page-toolbar">
+        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom">
+          <span class="thin uppercase hidden-xs" id="datetime"></span>
+          <script type="text/javascript">
+            window.onload = date_time('datetime');
+          </script>
         </div>
-        <div class="my-div-body">
-            <div class="portlet box blue-madison">
-                <div class="portlet-title">
-                    <div class="caption"><?php echo $title ?></div>
-                    <div class="pull-right btn-add-padding"><?php echo $btn_add; ?></div>
-                </div>
-                <div class="portlet-body">
-                    <table class="table table-bordered table-hover" id="dataTables">
+      </div>
+    </div>
+    <div style="padding-top: 10px;">
+      <div class="portlet box blue-madison" style="border: none;">
+        <div class="portlet-body">
+          <div class="row">
+            <div class="col-md-12">
+            <table class="table table-bordered table-hover" id="dataTables">
                         <thead>
                             <tr>
                                 <th class="text-center">No.</th>
@@ -39,7 +33,7 @@
                                 <th>Asal Gereja</th>
                                 <th>Alamat</th>
                                 <th>Domisili</th>
-                                <th>Keanggotaan</th>
+                                <th>Keanggotan</th>
                                 <th>Jenis Kelamin</th>
                                 <th>NO HP</th>
                                 <th>Email</th>
@@ -49,10 +43,12 @@
                         </thead>
                         <tfood></tfood>
                     </table>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <script type="text/javascript">
     var TableDatatablesManaged = function() {
@@ -64,7 +60,7 @@
             // begin first table
             table.dataTable({
                 "ajax": {
-                    "url": "<?php echo site_url('Pengurus/anggota/Anggotalist') ?>",
+                    "url": "<?php echo site_url('home/Waitinglist') ?>",
                     "type": "POST",
                     "data": function(d) {},
                 },
@@ -93,15 +89,15 @@
                         "orderable": true
                     },
                     {
-                        "data": "nmpendidikan",
+                        "data": "pendidikan",
                         "orderable": true
                     },
                     {
-                        "data": "nmpekerjaan",
+                        "data": "pekerjaan",
                         "orderable": true
                     },
                     {
-                        "data": "gereja",
+                        "data": "asal_gereja",
                         "orderable": true
                     },
                     {
@@ -165,8 +161,8 @@
                 // "bStateSave": true, // save datatable state(pagination, sort, etc) in cookie.
 
                 "lengthMenu": [
-                    [10, 15, 25, -1],
-                    [10, 15, 25, "All"] // change per page values here
+                    [10, 25, 35, -1],
+                    [10, 25, 35, "All"] // change per page values here
                 ],
                 // set the initial value
                 "pageLength": 10,
